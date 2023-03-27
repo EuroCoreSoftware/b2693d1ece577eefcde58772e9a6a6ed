@@ -1,11 +1,11 @@
 +++
-title = "Games"
-description = "Games that have been built by the Rust community."
+title = "Robots"
+description = "Robots that have been built by the Rust community."
 page_template = "categories/page.html"
 
 [extra]
-icon = "game"
-single = "game"
-plural = "games"
+icon = "rocket"
+single = "robot"
+plural = "robots"
 columns = "four"
 +++

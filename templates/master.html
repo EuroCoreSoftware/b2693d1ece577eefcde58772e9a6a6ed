@@ -44,7 +44,7 @@
     <div class="pusher">
         <header class="ui inverted vertical masthead center aligned segment">
             <nav class="ui container" aria-label="site">
-                <ul class="ui large borderless inverted menu nolist">
+                <ul class="ui large borderless inverted menu nolist" id="mainMenu">
                     <li>
                         <a class="toc item">
                             <i class="sidebar icon"></i>
@@ -95,7 +95,7 @@
             {% block content %} {% endblock %}
         </main>
 
-        <footer class="ui inverted vertical footer segment">
+        <footer class="ui inverted vertical footer segment" id="footer">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
                     <div class="three wide column">
@@ -131,6 +131,7 @@
     <script src="/assets/semantic/js/visibility.min.js"></script>
     <script src="/assets/semantic/js/transition.min.js"></script>
     <script src="/assets/semantic/js/sidebar.min.js"></script>
+    <!-- <script src="/assets/semantic/js/sticky.min.js"></script> -->
 
     <script>
         $(document).ready(function () {
@@ -154,6 +155,8 @@
             $('.ui.sidebar .item').on('click', function (event) {
                 $('.ui.sidebar').sidebar('hide');
             })
+
+            // $('#mainMenu').sticky({context: '#footer'});
         });
     </script>
     
