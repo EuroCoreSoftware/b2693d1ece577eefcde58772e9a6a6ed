@@ -2,146 +2,52 @@
 {% import "macros.html" as macros %}
 
 {% block masthead %}
-<h1 class="ui inverted header">
-    <!-- <div>
-        <img class="ui centered image" src="{{ get_url(path='assets/img/rust-logo-blk-invert.svg')}}" alt="" width="128" height="128">
-    </div> -->
-    Eurocore Software
-</h1>
-<h2>Software That Runs on Robot.</h2>
-<!-- <a class="ui huge primary button" href="#get-started">Get Started <i class="right arrow icon"></i></a> -->
+<section class="hero is-medium is-info">
+    <div class="hero-body has-text-centered">
+        <p>
+            <span class="icon is-large">
+                <i class="fas fa-2x fa-rocket"></i>
+            </span>
+        </p>
+
+        <p class="title">
+            Eurocore Software
+        </p>
+        <p class="subtitle">
+            Software That Runs on Robot
+        </p>
+    </div>
+</section>
 {% endblock %}
 
 {% block content %}
-<!-- <section class="ui vertical stripe">
-    <h2 class="ui center aligned icon header">
-        <i class="circular game icon"></i>
-        <a href="#get-started" id="get-started">
-            Get Started
-        </a>
-    </h2>
-    <div class="ui text container">
-        <p>
-            Since you ended up here, you probably agree that Rust is potentially an ideal language for Game Development.
-        </p>
-        <p>
-            Its emphasis on low-level memory safe programming promises a better development process, less debugging time,
-            and better end results.
-        </p>
-        <p>
-            While the ecosystem is still very young, you can find enough libraries and game engines to sink your teeth into
-            doing some slightly experimental gamedev.
-        </p>
-        <p>
-            If you haven't learned Rust yet, maybe take a look at <a href="#resources"><i class="icon list small"></i>Resources</a>
-            first. If you are already proficient with Rust you might want to start with <a href="#ecosystem"><i class="icon grid layout small"></i>Ecosystem</a>,
-            <a href="#news"><i class="icon newspaper small"></i>News</a>
-            or <a href="#chat"><i class="icon chat small"></i>Chat</a>.
-        </p>
-    </div>
-</section> -->
 
-<!-- <section>
-    <h3 class="ui horizontal divider small header">
-        <a href="#chat" id="chat">
-            <i class="chat icon big"></i>
-            Chat
-        </a>
-    </h3>
 
-    <div class="ui vertical stripe">
-        <div class="ui text container">
-            <p>
-                The main meeting places for people doing gamedev in Rust are on <a href="https://discordapp.com/">Discord</a>
-                - there's a #games-and-graphics channel on the <a href="https://bit.ly/rust-community">Rust Community server</a>,
-                as well as a dedicated <a href="https://discord.gg/yNtPTb2">Game Development in Rust server</a>.
-            </p>
-            <p>Many libraries have their own lively gitter chats, which you can find in their descriptions.</p>
-            <p>Also see the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>.</p>
-        </div>
-    </div>
-</section> -->
-
-<!-- <section>
-    <h3 class="ui horizontal divider small header">
-        <a href="#news" id="news">
-            <i class="newspaper icon big"></i>
-            News
-        </a>
-    </h3>
-
-    <div class="ui vertical stripe">
-        <div class="ui text container">
-            <p>
-                The latest Rust gamedev news is available at:
-                the <a href="https://www.reddit.com/r/rust_gamedev"><i class="icon reddit alien small"></i>subreddit</a>,
-                the monthly  <a href="https://rust-gamedev.github.io/"><i class="icon newspaper small"></i>newsletter</a>,
-                the <a href="https://rustgamedev.com"><i class="icon headphones small"></i>podcast</a>,
-                and the <a href="https://twitter.com/rust_gamedev"><i class="icon twitter small"></i>@rust_gamedev</a> Twitter feed.
-            </p>
-        </div>
-    </div>
-</section> -->
-
-<section>
+<section class="section">
     {% set software = get_section(path="software/_index.md") %}
     {{ macros::category_list(section=software) }}
 </section>
 
-<section>
-    <h3 class="ui horizontal divider small header">
+<section class="section">
+    <h3 class="divider">
         <a href="#curators" id="curators">
-            <i class="users icon big"></i>
-            Curators
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-users"></i>
+                </span>
+                <span>Curators</span>
+            </span>
         </a>
     </h3>
 
-    <div class="ui vertical stripe">
-        <div class="ui text container">
-            <p>
-                The people that help maintain this site.
-            </p>
-        </div>
-
-        <div class="ui container">
-            <div class="ui three stackable cards">
-                {% set data = load_data(path="content/contributors/data.toml") %}
-                {{ macros::contributors(contributors=data.contributors) }} 
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="center aligned description">
-                            Contribute to the site, and add your name here!
-                        </div>
-                    </div>
-                    <!-- <a href="https://github.com/rust-gamedev/arewegameyet" class="ui bottom primary attached button">
-                        <i class="github icon" aria-hidden="true"></i>
-                        Go to GitHub
-                    </a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h3 class="ui horizontal divider small header">
-        <a href="#about" id="about">
-            <i class="user icon big"></i>
-            About
-        </a>
+    <h3 class="has-text-centered subtitle">
+        The people that help maintain this site.
     </h3>
 
-    <div class="ui vertical stripe">
-        <div class="ui text container">
-            <p>
-                <strong>Eurocore
-                is powered by <a href="https://github.com/getzola/zola">Zola</a>, a Rust static site generator.
-            </p>
-            <p>
-                Inspired by <a href="https://arewegameyet.rs/"">arewegameyet</a>, <a href="https://www.arewewebyet.org/">arewewebyet</a>, and <a href="https://www.arewelearningyet.com/">arewelearningyet</a>.
-            </p>
-        </div>
+    <div class="tile is-ancestor">
+        {% set data = load_data(path="content/contributors/data.toml") %}
+        {{ macros::contributors(contributors=data.contributors) }} 
     </div>
 </section>
+
 {% endblock content %}

@@ -2,7 +2,7 @@
 name = "Antonin Raffin"
 links = { twitter = "araffin2", github = "araffin", home = "https://araffin.github.io/" }
 about = ""
-description = ""
+description = "Researcher in robotics and machine learning"
 
 [[contributors]]
 name = "Freek Stulp"
