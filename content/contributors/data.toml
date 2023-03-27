@@ -1,10 +1,10 @@
 [[contributors]]
-name = "doppioslash"
-links = { twitter = "doppioslash", github = "doppioslash", home = "http://doppioslash.com" }
-about = "Graphics Programmer"
-description = "Writes on <a href=\"//www.shadercat.com\">shadercat.com</a> about Physically Based Shading and Rendering with Rust and Unity."
+name = "Antonin Raffin"
+links = { twitter = "araffin2", github = "araffin", home = "https://araffin.github.io/" }
+about = ""
+description = ""
 
 [[contributors]]
-name = "nxnfufunezn"
-links = { twitter = "nxnfufunezn", github = "nxnfufunezn" }
-about = "Backend developer and FP enthusiast"
+name = "Freek Stulp"
+links = { github = "stulp" }
+about = ""

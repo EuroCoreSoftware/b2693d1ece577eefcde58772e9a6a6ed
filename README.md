@@ -1,16 +1,12 @@
-# README
+# Eurocore Software - Software That Runs on Robot
 
 ## What is this?
 
-The Rust community has a number of websites dedicated to keeping track of the state of the ecosystem for specific purposes. (e.g. [arewewebyet](https://www.arewewebyet.org) and [arewelearningyet](https://www.arewelearningyet.com))
-
-This one tracks the state of the ecosystem for Game Development in Rust.
-
-You can find the site at [arewegameyet.rs](https://arewegameyet.rs/).
+A directory of robotics software you can use with your robot.
 
 ## Contribute
 
-Arewegameyet? uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
+Eurocore uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
 
 1. Navigate to whichever folder in `/content` best fits your project.
 
@@ -78,3 +74,10 @@ If you're comfortable with semantic-ui and Zola please reach out to us in the Is
 It's very likely there are mistakes around, if you find one please file an issue.
 
 *Thanks for helping us map the Rust game development ecosystem!*
+
+
+### Aknowledgement
+
+The template comes from [arewegameyet.rs](https://arewegameyet.rs/).
+
+Inspired by [arewewebyet](https://www.arewewebyet.org) and [arewelearningyet](https://www.arewelearningyet.com))

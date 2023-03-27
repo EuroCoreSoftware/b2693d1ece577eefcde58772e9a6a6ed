@@ -1,8 +1,8 @@
-title = "Are we game yet?"
-description = "A guide to the Rust game development ecosystem."
+title = "Eurocore Software"
+description = "A directory of robotics software you can use with your robot."
 
 # The URL the site will be built for
-base_url = "https://arewegameyet.rs/"
+base_url = "/" # https://arewegameyet.rs/
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

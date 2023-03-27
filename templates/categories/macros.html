@@ -1,26 +1,14 @@
+{% import "macros.html" as macros %}
+
 {% macro info(item, section) %}
 
 {% if item.name %}
     {% set name = item.name %}
 {% endif %}
 
-{% if item.source %}
-    {% if item.source == 'crates' %}
-        {# human readable name #}
-        {% set name = item.name %}
-        {# Github/Gitlab/Etc. repository #}
-        {% set crate_url = 'https://crates.io/crates/' ~ name %}
-        {% set description = item.name %}
-    {% elif item.source == 'github' %}
-        {% set name = item.name %}
-        {% set description = item.name %}
-
-    {% endif %}
-{% endif %}
 
 {# OVERRIDES: If specified in the config file, the above can be rewritten. #}
 {% if item.repository_url %}   {% set repository_url = item.repository_url %}         {% endif %}
-{% if item.crate_url %}        {% set crate_url = item.crate_url %}                   {% endif %}
 {% if item.homepage_url %}     {% set homepage_url = item.homepage_url %}             {% endif %}
 {% if item.gitter_url %}       {% set gitter_url = item.gitter_url %}                 {% endif %}
 {% if item.description %}      {% set description = item.description %}               {% endif %}
@@ -60,12 +48,6 @@
             </a>
         {% endif %}
 
-        {% if crate_url %}
-            <a href="{{ crate_url }}" aria-label="Crates.io link for {{ name }}">
-                <i class="right floated cube icon"></i>
-            </a>
-        {% endif %}
-
         {% if homepage_url %}
             <a href="{{ homepage_url }}" aria-label="Website link for {{ name }}">
                 <i class="right floated home icon"></i>
@@ -89,9 +71,57 @@
             {% endfor %}
         </div>
 
+
+        {% if item.youtube_id %}
+            {{ macros::youtube(id=item.youtube_id) }}
+        {% endif %}
+
         <div class="description">
             <p>{{ description }}</p>
         </div>
+
+        {% if item.name %}
+        <div class="extra content">
+            {# only projects hosted on pip get badges for now #}
+            {% set name = "ripgrep" %}
+        
+            <div class="ui horizontal list">
+                <div class="item">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000"
+                                alt="Crates.io link for {{ name }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="item" aria-hidden="true">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000"
+                                alt="Download count for {{ name }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="item" aria-hidden="true">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/dr/{{name}}.svg?maxAge=2592000"
+                                alt="Recent download count for {{ name }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="item" aria-hidden="true">
+                    <div class="content">
+                        <a href="https://crates.io/crates/{{name}}">
+                            <img src="https://img.shields.io/crates/l/{{name}}.svg?maxAge=2592000" alt="License for {{ name }}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+
     </div>
     
 </li>

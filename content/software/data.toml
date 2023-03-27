@@ -1,0 +1,13 @@
+[[items]]
+name = "MoveIt!"
+description = """Easy-to-use open source robotics manipulation platform for developing commercial applications, prototyping designs,
+and benchmarking algorithms."""
+
+categories = ["planning"]
+repository_url = "https://github.com/ros-planning/moveit2"
+homepage_url = "https://moveit.ros.org/"
+video_url = "https://www.youtube.com/watch?v=gC1YcpjTm4c"
+youtube_id = "gC1YcpjTm4c"
+paper_url = ""
+logo_url = ""
+tags = []

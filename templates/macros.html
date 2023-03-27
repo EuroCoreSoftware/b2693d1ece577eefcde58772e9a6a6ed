@@ -82,3 +82,11 @@
         </div>
     {% endfor %}
 {% endmacro contributors %}
+
+{% macro youtube(id) %}
+<div class="ui embed">
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/{{id}}"
+        allowfullscreen></iframe>
+</div>
+{% endmacro youtube %}
