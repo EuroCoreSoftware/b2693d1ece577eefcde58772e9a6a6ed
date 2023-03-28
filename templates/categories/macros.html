@@ -22,59 +22,45 @@
     {% set primary_url = repository_url %}
 {% endif %}
 
-<div class="tile is-4 is-parent has-text-centered">
-    <div class="tile is-child box">
-        {% if item.image %}
-            {% if primary_url %}
-                <a class="image" href="{{ primary_url }}">
-            {% else %}
-                <div class="image">
-            {% endif %}
-                <img src="{{ item.image }}" alt="Picture of {{ name }}">
-            {% if primary_url %}
-                </a>
-            {% else %}
-                </div>
-            {% endif %}
-        {% endif %}
-        
-        <div class="has-text-right">
-            <a href="#{{ name | slugify }}" id="{{ name | slugify }}" aria-label="Permanent link for {{ name }}">
-                <span class="icon">
-                    <i class="fas fa-hashtag"></i>
-                </span>
-            </a>
-
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
             {% if repository_url %}
                 <a href="{{ repository_url }}" aria-label="Github link for {{ name }}">
-                    <span class="icon">
-                        <i class="fab fa-github"></i>
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
                     </span>
                 </a>
             {% endif %}
 
             {% if homepage_url %}
                 <a href="{{ homepage_url }}" aria-label="Website link for {{ name }}">
-                    <span class="icon">
-                        <i class="fas fa-home"></i>
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
                     </span>
                 </a>
             {% endif %}
+            <a href="#{{ name | slugify }}" id="{{ name | slugify }}" aria-label="Permanent link for {{ name }}">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
         </div>
         
         <div class="title">
             {% if primary_url %}
-                <a href="{{ primary_url }}">{{ name }}</a>
+                <a href="{{ primary_url }}" class="has-text-info">{{ name }}</a>
             {% else %}
                 {{ name }}
             {% endif %}
         </div>
 
-        <div class="has-text-grey mb-3">
+        <div class="mb-3">
             {% for category in item.categories %}
                 {% set category_data = get_page(path="." ~ section.path ~ category ~ ".md") %}
 
-                <a href="{{ category_data.permalink }}">{{ category_data.title }}</a>
+                <a class="has-text-grey" href="{{ category_data.permalink }}">{{ category_data.title }}</a>
                 {% if not loop.last %}<span>·</span>{% endif %}
             {% endfor %}
         </div>
@@ -84,32 +70,53 @@
             {{ macros::youtube(id=item.youtube_id) }}
         {% endif %}
 
-        <div class="description mt-4 mb-4">
+        <div class="description mt-5 mb-5">
             <p>{{ description }}</p>
         </div>
 
-        {% if item.name %}
+        {% if item.logo_url %}
+            {% if primary_url %}
+            <a class="image mt-3 mb-3" href="{{ primary_url }}">
+            {% else %}
+            <div class="image mt-3 mb-3">
+            {% endif %}
+                <img style="max-height: 80px; width:auto; height:auto; margin:auto;" src="{{ item.logo_url }}"
+                    alt="Picture of {{ name }}">
+            {% if primary_url %}
+            </a>
+            {% else %}
+            </div>
+            {% endif %}
+        {% endif %}
+
+
+        <hr class="mt-auto" />
+
+        {% if item.pypi %}
+
         <div class="content">
             {# only projects hosted on pip get badges for now #}
-            {% set name = "ripgrep" %}
+            {% set name = item.pypi %}
         
             <div class="level">
+                <!-- <a href="https://pypi.org/project/{{name}}" class="level-item">
+                    <img src="https://badge.fury.io/py/{{name}}.svg"
+                        alt="PyPi link for {{ name }}">
+                </a> -->
                 <div class="level-item">
-                    <div class="content">
-                        <a href="https://crates.io/crates/{{name}}">
-                            <img src="https://img.shields.io/crates/v/{{name}}.svg?maxAge=2592000"
-                                alt="Crates.io link for {{ name }}">
-                        </a>
-                    </div>
+                    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DLR-RM/stable-baselines3?label=Github%20Stars">
                 </div>
-                <div class="level-item" aria-hidden="true">
-                    <div class="content">
-                        <a href="https://crates.io/crates/{{name}}">
-                            <img src="https://img.shields.io/crates/d/{{name}}.svg?maxAge=2592000"
-                                alt="Download count for {{ name }}">
-                        </a>
-                    </div>
+                <div class="level-item">
+                    <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/DLR-RM/stable-baselines3?label=Github%20Forks">
                 </div>
+                <div class="level-item">
+                    <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/DLR-RM/stable-baselines3">
+                </div>
+
+                <a href="https://pypi.org/project/{{name}}" class="level-item">
+                    <img src="https://static.pepy.tech/personalized-badge/{{ name }}?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
+                        alt="Download count for {{ name }}">
+                </a>
             </div>
         </div>
         {% endif %}

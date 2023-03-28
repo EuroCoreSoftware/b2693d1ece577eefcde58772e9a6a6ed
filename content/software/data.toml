@@ -2,12 +2,36 @@
 name = "MoveIt!"
 description = """Easy-to-use open source robotics manipulation platform for developing commercial applications, prototyping designs,
 and benchmarking algorithms."""
-
 categories = ["planning"]
 repository_url = "https://github.com/ros-planning/moveit2"
 homepage_url = "https://moveit.ros.org/"
 video_url = "https://www.youtube.com/watch?v=gC1YcpjTm4c"
 youtube_id = "gC1YcpjTm4c"
 paper_url = ""
-logo_url = ""
+logo_url = "https://moveit.ros.org/assets/logo/moveit_logo-black.png"
+tags = []
+
+[[items]]
+name = "Stable-Baselines3"
+description = """PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms."""
+categories = ["learning"]
+repository_url = "https://github.com/DLR-RM/stable-baselines3"
+homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
+video_url = "https://www.youtube.com/watch?v=f_FmDFrYkPM"
+youtube_id = "f_FmDFrYkPM"
+paper_url = ""
+logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
+tags = []
+pypi = "stable-baselines3"
+
+[[items]]
+name = "dmpbbo"
+description = """Python/C++ library for Dynamical Movement Primitives and Black-Box Optimization """
+categories = ["learning"]
+repository_url = "https://github.com/stulp/dmpbbo"
+# homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
+video_url = "https://www.youtube.com/watch?v=jkaRO8J_1XI"
+youtube_id = "jkaRO8J_1XI"
+paper_url = ""
+# logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
 tags = []

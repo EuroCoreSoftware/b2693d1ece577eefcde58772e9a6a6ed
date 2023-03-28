@@ -34,13 +34,13 @@
                 {% endfor %}
 
                 <a class="tile is-parent is-4" href="{{ category.permalink }}">
-                    <div class="tile is-child box is-vertical">
-                        <div class="tile is-size-3">
+                    <div class="tile is-child box is-vertical item">
+                        <div class="is-size-3">
                             {{ category.title }}
                         </div>
-                        <div class="tile">{{ category.description }}</div>
+                        <div class="mt-auto mb-auto">{{ category.description }}</div>
                         <hr class="mb-3 mt-3" />
-                        <div class="tile has-text-grey">
+                        <div class="has-text-grey">
                             <span class="icon-text">
                                 <span class="icon">
                                     <i class="fas fa-{{ section.extra.icon }}"></i>
@@ -51,7 +51,7 @@
                             </span>
                         </div>
                         <hr class="mb-3 mt-3" />
-                        <div class="button is-link is-fullwidth tile">
+                        <div class="button is-info is-fullwidth">
                             Browse
                         </div>
                     </div>
@@ -105,8 +105,9 @@
 {% endmacro contributors %}
 
 {% macro youtube(id) %}
-<div class="image">
+<div class="image is-16by9">
     <iframe
+        class="has-ratio"
         src="https://www.youtube-nocookie.com/embed/{{id}}"
         allowfullscreen></iframe>
 </div>
