@@ -104,7 +104,8 @@
     {% endfor %}
 {% endmacro contributors %}
 
-{% macro youtube(id) %}
+{% macro youtube(video_url) %}
+{% set id = video_url | replace(from="https://www.youtube.com/watch?v=", to="") %}
 <div class="image is-16by9">
     <iframe
         class="has-ratio"

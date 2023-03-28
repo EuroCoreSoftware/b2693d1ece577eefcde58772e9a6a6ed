@@ -31,6 +31,9 @@
                         <i class="fab fa-lg fa-github"></i>
                     </span>
                 </a>
+                {% set github_repo = repository_url | replace(from="https://github.com/", to="") %}
+
+
             {% endif %}
 
             {% if homepage_url %}
@@ -47,7 +50,7 @@
             </a>
    
         </div>
-        
+
         <div class="title">
             {% if primary_url %}
                 <a href="{{ primary_url }}" class="has-text-info">{{ name }}</a>
@@ -66,8 +69,8 @@
         </div>
 
 
-        {% if item.youtube_id %}
-            {{ macros::youtube(id=item.youtube_id) }}
+        {% if item.video_url %}
+            {{ macros::youtube(video_url=item.video_url) }}
         {% endif %}
 
         <div class="description mt-5 mb-5">
@@ -92,34 +95,34 @@
 
         <hr class="mt-auto" />
 
-        {% if item.pypi %}
 
         <div class="content">
-            {# only projects hosted on pip get badges for now #}
-            {% set name = item.pypi %}
         
             <div class="level">
                 <!-- <a href="https://pypi.org/project/{{name}}" class="level-item">
                     <img src="https://badge.fury.io/py/{{name}}.svg"
                         alt="PyPi link for {{ name }}">
                 </a> -->
-                <div class="level-item">
-                    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DLR-RM/stable-baselines3?label=Github%20Stars">
-                </div>
-                <div class="level-item">
-                    <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/DLR-RM/stable-baselines3?label=Github%20Forks">
-                </div>
-                <div class="level-item">
-                    <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/DLR-RM/stable-baselines3">
-                </div>
+                {% if github_repo %}
+                    <div class="level-item">
+                        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ github_repo }}?label=Github%20Stars">
+                    </div>
+                    <div class="level-item">
+                        <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/{{ github_repo }}?label=Github%20Forks">
+                    </div>
+                    <div class="level-item">
+                        <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/{{ github_repo }}">
+                    </div>
+                {% endif %}
+                {% if item.pypi %}
 
-                <a href="https://pypi.org/project/{{name}}" class="level-item">
-                    <img src="https://static.pepy.tech/personalized-badge/{{ name }}?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
-                        alt="Download count for {{ name }}">
-                </a>
+                    <a href="https://pypi.org/project/{{item.pypi}}" class="level-item">
+                        <img src="https://static.pepy.tech/personalized-badge/{{ item.pypi }}?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
+                            alt="Download count for {{ item.pypi }}">
+                    </a>
+                {% endif %}
             </div>
         </div>
-        {% endif %}
 
     </div>
 </div>
