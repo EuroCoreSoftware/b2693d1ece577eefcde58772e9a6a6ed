@@ -6,7 +6,7 @@ categories = ["planning"]
 repository_url = "https://github.com/ros-planning/moveit2"
 homepage_url = "https://moveit.ros.org/"
 video_url = "https://www.youtube.com/watch?v=gC1YcpjTm4c"
-paper_url = ""
+paper_url = "https://arxiv.org/abs/1404.3785"
 logo_url = "https://moveit.ros.org/assets/logo/moveit_logo-black.png"
 tags = []
 
@@ -17,18 +17,16 @@ categories = ["learning"]
 repository_url = "https://github.com/DLR-RM/stable-baselines3"
 homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
 video_url = "https://www.youtube.com/watch?v=f_FmDFrYkPM"
-paper_url = ""
+paper_url = "http://jmlr.org/papers/v22/20-1364.html"
 logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
 tags = []
 pypi = "stable-baselines3"
 
 [[items]]
 name = "dmpbbo"
-description = """Python/C++ library for Dynamical Movement Primitives and Black-Box Optimization """
+description = """Python/C++ library for Dynamical Movement Primitives and Black-Box Optimization."""
 categories = ["learning"]
 repository_url = "https://github.com/stulp/dmpbbo"
-# homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
 video_url = "https://www.youtube.com/watch?v=jkaRO8J_1XI"
-paper_url = ""
-# logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
+paper_url = "https://www.theoj.org/joss-papers/joss.01225/10.21105.joss.01225.pdf"
 tags = []

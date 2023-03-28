@@ -59,7 +59,7 @@
             {% endif %}
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
             {% for category in item.categories %}
                 {% set category_data = get_page(path="." ~ section.path ~ category ~ ".md") %}
 
@@ -73,15 +73,59 @@
             {{ macros::youtube(video_url=item.video_url) }}
         {% endif %}
 
-        <div class="description mt-5 mb-5">
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+        
+            <!-- <a href="https://pypi.org/project/{{name}}" class="level-item">
+                        <img src="https://badge.fury.io/py/{{name}}.svg"
+                            alt="PyPi link for {{ name }}">
+                    </a> -->
+            {% if github_repo %}
+            <a href="{{ repository_url }}/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ github_repo }}?label=Github%20stars">
+            </a>
+            <a href="{{ repository_url }}/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/{{ github_repo }}?label=Github%20forks">
+            </a>
+            <a href="{{ repository_url }}/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/{{ github_repo }}">
+            </a>
+            <a href="{{ repository_url }}">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/{{ github_repo }}">
+            </a>
+
+            {% endif %}
+            {% if item.pypi %}
+            <a href="https://pypi.org/project/{{item.pypi}}">
+                <img src="https://img.shields.io/pypi/v/{{ item.pypi }}"
+                    alt="PyPi version">
+            </a>
+
+            <a href="https://pypi.org/project/{{item.pypi}}">
+                <img src="https://static.pepy.tech/personalized-badge/{{ item.pypi }}?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
+                    alt="Download count for {{ item.pypi }}">
+            </a>
+            {% endif %}
+            {% if item.paper_url %}
+            <a href="{{ item.paper_url }}">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            {% endif%}
+        </div>
+
+        <div class="description has-text-justified mb-auto">
             <p>{{ description }}</p>
         </div>
 
+        <span class="mb-6"></span>
+
         {% if item.logo_url %}
             {% if primary_url %}
-            <a class="image mt-3 mb-3" href="{{ primary_url }}">
+            <a class="image mt-auto" href="{{ primary_url }}">
             {% else %}
-            <div class="image mt-3 mb-3">
+            <div class="image mt-auto">
             {% endif %}
                 <img style="max-height: 80px; width:auto; height:auto; margin:auto;" src="{{ item.logo_url }}"
                     alt="Picture of {{ name }}">
@@ -93,36 +137,7 @@
         {% endif %}
 
 
-        <hr class="mt-auto" />
-
-
-        <div class="content">
-        
-            <div class="level">
-                <!-- <a href="https://pypi.org/project/{{name}}" class="level-item">
-                    <img src="https://badge.fury.io/py/{{name}}.svg"
-                        alt="PyPi link for {{ name }}">
-                </a> -->
-                {% if github_repo %}
-                    <div class="level-item">
-                        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ github_repo }}?label=Github%20Stars">
-                    </div>
-                    <div class="level-item">
-                        <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/{{ github_repo }}?label=Github%20Forks">
-                    </div>
-                    <div class="level-item">
-                        <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/{{ github_repo }}">
-                    </div>
-                {% endif %}
-                {% if item.pypi %}
-
-                    <a href="https://pypi.org/project/{{item.pypi}}" class="level-item">
-                        <img src="https://static.pepy.tech/personalized-badge/{{ item.pypi }}?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
-                            alt="Download count for {{ item.pypi }}">
-                    </a>
-                {% endif %}
-            </div>
-        </div>
+ 
 
     </div>
 </div>

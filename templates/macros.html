@@ -1,7 +1,7 @@
 {% macro category_list(section) %}
     
     <h3 class="divider">
-        <a href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}">
+        <a class="has-text-info" href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}">
             <span class="icon-text">
                 <span class="icon">
                     <i class="fas fa-{{ section.extra.icon }}"></i>
@@ -14,7 +14,7 @@
 
     <div class="section">
         {% if section.description %}
-            <h3 class="has-text-centered subtitle">
+            <h3 class="has-text-centered subtitle mt-auto mb-6">
                 {{ section.description }}
             </h3>
 
@@ -66,24 +66,24 @@
         <div class="tile is-6 is-parent has-text-centered">
             <div class="tile is-child box">
                 <div class="title">@{{ c.name }}</div>
-                <div class="">
+                <div>
                     {% for name, link in c.links %}
                         {# special links for social websites with icons #}
                         {% if name == "twitter" or name == "github" %}
-                            <a href="https://{{name}}.com/{{link}}" aria-label="{{name}} link for {{ c.name }}">
+                            <a class="has-text-info" href="https://{{name}}.com/{{link}}" aria-label="{{name}} link for {{ c.name }}">
                                 <span class="icon is-large">
                                     <i class="fab fa-lg fa-{{name}}"></i>
                                 </span>
                             </a>
                         {% elif name == "home" %}
-                            <a href="{{link}}" aria-label="Website link for {{ c.name }}">
+                            <a class="has-text-info" href="{{link}}" aria-label="Website link for {{ c.name }}">
                                 <span class="icon is-large">
                                     <i class="fas fa-lg fa-{{name}}"></i>
                                 </span>
                             </a>
                         {# any other website #}
                         {% else %}
-                            <a href="{{link}}" title="{{name}} link for {{ c.name }}">
+                            <a class="has-text-info" href="{{link}}" title="{{name}} link for {{ c.name }}">
                                 <span class="icon is-large">
                                     <i class="fas fa-lg fa-globe"></i>
                                 </span>
