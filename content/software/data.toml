@@ -2,7 +2,7 @@
 name = "MoveIt!"
 description = """Easy-to-use open source robotics manipulation platform for developing commercial applications, prototyping designs,
 and benchmarking algorithms."""
-categories = ["planning"]
+categories = ["planning", "ik"]
 repository_url = "https://github.com/ros-planning/moveit2"
 homepage_url = "https://moveit.ros.org/"
 video_url = "https://www.youtube.com/watch?v=gC1YcpjTm4c"
@@ -29,4 +29,121 @@ categories = ["learning"]
 repository_url = "https://github.com/stulp/dmpbbo"
 video_url = "https://www.youtube.com/watch?v=jkaRO8J_1XI"
 paper_url = "https://www.theoj.org/joss-papers/joss.01225/10.21105.joss.01225.pdf"
+tags = []
+
+[[items]]
+name = "Pink"
+description = """Python inverse kinematics for articulated robot models, based on Pinocchio."""
+categories = ["ik"]
+repository_url = "https://github.com/tasts-robots/pink"
+video_url = "https://www.youtube.com/watch?v=NO_TkHGS0wQ"
+# paper_url = ""
+logo_url = "https://user-images.githubusercontent.com/1189580/172797197-9aa46561-cfaa-4046-bd60-f681d85b055d.png"
+pypi = "pin-pink"
+tags = []
+
+[[items]]
+name = "Point Cloud Library"
+description = """Standalone, large scale, open project for 2D/3D image and point cloud processing."""
+categories = ["vision"]
+homepage_url = "https://pointclouds.org/"
+repository_url = "https://github.com/PointCloudLibrary/pcl"
+video_url = "https://www.youtube.com/watch?v=DLvO0b2NBXE"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/5980567/"
+logo_url = "https://github.com/PointCloudLibrary/pcl/raw/master/pcl.png"
+tags = []
+
+[[items]]
+name = "OctoMap"
+description = """An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, the viewer octovis, and dynamicEDT3D."""
+categories = ["vision"]
+homepage_url = "http://octomap.github.io/"
+repository_url = "https://github.com/OctoMap/octomap"
+video_url = "https://www.youtube.com/watch?v=7ZsxJzR14rc"
+paper_url = "https://courses.cs.washington.edu/courses/cse571/16au/slides/hornung13auro.pdf"
+logo_url = "http://octomap.github.io/octomap_tree.png"
+tags = []
+
+[[items]]
+name = "ORB-SLAM 2"
+description = """Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities."""
+categories = ["vision"]
+homepage_url = "https://webdiis.unizar.es/~raulmur/orbslam/"
+repository_url = "https://github.com/raulmur/ORB_SLAM2"
+video_url = "https://www.youtube.com/watch?v=ufvPS5wJAx0"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/7946260/"
+# logo_url = ""
+tags = []
+
+[[items]]
+name = "ORB-SLAM 3"
+description = """ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM"""
+categories = ["vision"]
+# homepage_url = "https://webdiis.unizar.es/~raulmur/orbslam/"
+repository_url = "https://github.com/UZ-SLAMLab/ORB_SLAM3"
+video_url = "https://www.youtube.com/watch?v=HyLNq-98LRo"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/9440682/"
+# logo_url = ""
+tags = []
+
+
+[[items]]
+name = "Control Toolbox"
+description = """An Open-Source C++ Library for Robotics, Optimal and Model Predictive Control"""
+categories = ["control"]
+repository_url = "https://github.com/ethz-adrl/control-toolbox"
+video_url = "https://www.youtube.com/watch?v=Y7-1CBqs4x4"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8376281/"
+tags = []
+
+
+[[items]]
+name = "robotoc"
+description = """Efficient optimal control solvers for robotic systems."""
+categories = ["control"]
+homepage_url = "https://mayataka.github.io/robotoc/"
+repository_url = "https://github.com/mayataka/robotoc"
+video_url = "https://www.youtube.com/watch?v=SureDVDFbfM"
+paper_url = "https://arxiv.org/abs/2203.00997"
+tags = []
+
+[[items]]
+name = "limbo"
+description = """ A lightweight framework for Gaussian processes and Bayesian optimization of black-box functions (C++11)."""
+categories = ["learning"]
+homepage_url = "http://resibots.eu/limbo/"
+repository_url = "https://github.com/resibots/limbo"
+video_url = "https://www.youtube.com/watch?v=T-c17RKh3uE"
+paper_url = "https://joss.theoj.org/papers/10.21105/joss.00545"
+logo_url = "https://github.com/resibots/limbo/raw/master/docs/logo/logo_limbo.png"
+tags = []
+
+[[items]]
+name = "toppra"
+description = """Time-Optimal Path Parameterization, robotic motion planning library."""
+categories = ["planning"]
+homepage_url = "https://hungpham2511.github.io/toppra/index.html"
+repository_url = "https://github.com/hungpham2511/toppra"
+video_url = "https://www.youtube.com/watch?v=b9H-zOYWLbY"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
+pypi = "toppra"
+tags = []
+
+[[items]]
+name = "Ruckig"
+description = """Motion Generation for Robots and Machines. Real-time. Jerk-constrained. Time-optimal. """
+categories = ["planning"]
+homepage_url = "https://ruckig.com/"
+repository_url = "https://github.com/pantor/ruckig"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
+pypi = "ruckig"
+tags = []
+
+[[items]]
+name = "Kalibr"
+description = """The Kalibr visual-inertial calibration toolbox"""
+categories = ["vision"]
+repository_url = "https://github.com/ethz-asl/kalibr"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/7487628/"
+video_url = "https://www.youtube.com/watch?v=puNXsnrYWTY"
 tags = []

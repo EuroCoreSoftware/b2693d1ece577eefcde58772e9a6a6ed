@@ -20,7 +20,7 @@
 
         {% endif %}
 
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex-wrap-wrap">
             {% set data = load_data(path="content/" ~ section.path ~ "data.toml") %}
 
             {% for category in section.pages %}

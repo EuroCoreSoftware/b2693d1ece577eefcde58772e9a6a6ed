@@ -1,4 +1,4 @@
-# Eurocore Software - Software That Runs on Robot
+# Eurocore Software - Software That Runs on Real Robots
 
 ## What is this?
 

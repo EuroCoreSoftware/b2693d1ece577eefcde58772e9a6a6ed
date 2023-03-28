@@ -37,17 +37,10 @@
 
 {# list all content #}
 <section class="section">
-    <!-- <h2 class="divider">
-        <a href="#{{ section.extra.plural | slugify }}" id="{{ section.extra.plural | slugify }}">
-            <i class="list icon big"></i>
-            {{ section.extra.plural | title }}
-        </a>
-    </h2> -->
     <hr/>
 
-    <div class="tile is-ancestor">
+    <div class="tile is-ancestor is-flex-wrap-wrap">
         {% set config = load_data(path = "content/" ~ section.path ~ "data.toml", format="toml") %}
-
         {% if config.items %}
             {% for item in config.items %}
                 {% if item.categories is containing(page.slug) %}

@@ -14,7 +14,7 @@
             Eurocore Software
         </p>
         <p class="subtitle">
-            Software That Runs on Robot
+            Software That Runs on Real Robots
         </p>
     </div>
 </section>
@@ -22,9 +22,27 @@
 
 {% block content %}
 
-
 <section class="section">
-    {% set software = get_section(path="software/_index.md") %}
+{% set software = get_section(path="software/_index.md") %}
+{% set data = load_data(path="content/" ~ software.path ~ "data.toml") %}
+
+
+<nav class="level">
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Categories</p>
+            <p class="title">{{ software.pages | length }}</p>
+        </div>
+    </div>
+    <div class="level-item has-text-centered">
+        <div>
+            <p class="heading">Softwares</p>
+            <p class="title">{{ data.items | length }}</p>
+        </div>
+    </div>
+</nav>
+
+
     {{ macros::category_list(section=software) }}
 </section>
 
