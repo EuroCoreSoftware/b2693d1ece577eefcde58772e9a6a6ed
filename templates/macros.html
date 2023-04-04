@@ -107,9 +107,31 @@
 {% macro youtube(video_url) %}
 {% set id = video_url | replace(from="https://www.youtube.com/watch?v=", to="") %}
 <div class="image is-16by9">
-    <iframe
+    <!-- <iframe
         class="has-ratio"
         src="https://www.youtube-nocookie.com/embed/{{id}}"
-        allowfullscreen></iframe>
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/{{ id }}&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/{{id}}?autoplay=1><img src=https://img.youtube.com/vi/{{id}}/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
 </div>
 {% endmacro youtube %}
