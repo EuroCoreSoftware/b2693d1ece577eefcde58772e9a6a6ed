@@ -1,4 +1,4 @@
-# Eurocore Software - Software That Runs on Real Robots
+# EuroCore Software - Software That Runs on Real Robots
 
 ## What is this?
 
@@ -6,7 +6,7 @@ A directory of robotics software you can use with your robot.
 
 ## Contribute
 
-Eurocore uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
+EuroCore uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
 
 1. Navigate to whichever folder in `/content` best fits your project.
 
