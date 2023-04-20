@@ -140,3 +140,42 @@ video_url = "https://www.youtube.com/watch?v=b9H-zOYWLbY"
 paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
 pypi = "toppra"
 tags = []
+
+[[items]]
+name = "Multi-Robot-GSPNR-toolbox"
+description = "MATLAb package that provides methods to model multi-robot coordination problems as generalized stochastic Petri nets with rewards (GSPNR)"
+categories = ["learning", "planning"]
+repository_url = "https://github.com/cazevedo/multi-robot-gspnr-toolbox"
+video_url = ["https://www.youtube.com/watch?v=ghdTHn5xiNk", "https://www.youtube.com/watch?v=CH4iJs0rsIc", "https://www.youtube.com/watch?v=SzpZBFmJZn8"]
+paper_url = "https://www.mdpi.com/2076-3417/11/24/12087"
+tags = []
+
+[[items]]
+name = "POMDP-IR Solver"
+description = "A decision-making framework for active perception with POMDPs."
+categories = ["planning", "vision"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/pomdp-ir-solver"
+video_url = "https://www.youtube.com/watch?v=3PCh-G0vCeA"
+paper_url = ["https://link.springer.com/article/10.1007/s10458-014-9279-8", "https://ieeexplore.ieee.org/document/7759426"]
+tags = []
+
+[[items]]
+name = "Markov Decision Making (MDM)"
+description = "A library to support the deployment of decision-making methodologies"
+categories = ["planning"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/markov-decision-making"
+video_url = "https://www.youtube.com/watch?v=Ivx908SSzlk"
+paper_url = ["https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8002674", "https://www.ai4europe.eu/sites/default/files/2021-05/mdm_report.pdf"]
+tags = []
+
+[[items]]
+name = ""
+description = ""
+categories = [""]
+homepage_url = ""
+repository_url = ""
+video_url = ""
+paper_url = ""
+pypi = ""
+tags = []
+
