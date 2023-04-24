@@ -298,6 +298,64 @@ paper_url = "https://h2t.anthropomatik.kit.edu/pdf/RothfussFerreira2018.pdf"
 tags = []
 
 [[items]]
+name = "BlenderProc"
+description = "BlenderProc is a software to generate realistic images for the training of neural networks. "
+categories = ["rendering"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19074/30527_read-83759/"
+repository_url = "https://github.com/DLR-RM/BlenderProc"
+video_url = "https://user-images.githubusercontent.com/6104887/137109535-275a2aa3-f5fd-4173-9d16-a9a9b86f66e7.gif"
+paper_url = "https://joss.theoj.org/papers/10.21105/joss.04901"
+pypi = "blenderproc"
+tags = []
+
+[[items]]
+name = "3D Object Tracking"
+description = "In this repository, we share several algorithms and code of our ongoing research on 3D object tracking."
+categories = [""]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19085/30544_read-83761/"
+repository_url = "https://github.com/DLR-RM/3DObjectTracking"
+video_url = "https://www.youtube.com/watch?v=eYd_3TnJIaE"
+paper_url = "https://openaccess.thecvf.com/content/CVPR2022/papers/Stoiber_Iterative_Corresponding_Geometry_Fusing_Region_and_Depth_for_Highly_Efficient_CVPR_2022_paper.pdf"
+tags = []
+
+[[items]]
+name = "Augmented Autoencoders"
+description = "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images"
+categories = ["learning, vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-13864/24048_read-58570/"
+repository_url = "https://github.com/DLR-RM/AugmentedAutoencoder"
+video_url = "https://www.youtube.com/watch?v=jgb2eNNlPq4"
+paper_url = "https://openaccess.thecvf.com/content_ECCV_2018/html/Martin_Sundermeyer_Implicit_3D_Orientation_ECCV_2018_paper.html"
+tags = []
+
+[[items]]
+name = "RAFCON"
+description = "Visual state machine programming"
+categories = ["programming"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-4845/20104_read-47199/"
+repository_url = "https://github.com/DLR-RM/RAFCON"
+video_url = "https://www.youtube.com/watch?v=35dUykJandU"
+paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7759506"
+tags = []
+
+[[items]]
+name = "DLR CalDE and CalLab"
+description = "The DLR Camera Calibration Toolbox"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9201"
+repository_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9197"
+paper_url = "https://ieeexplore.ieee.org/document/4543398"
+tags = []
+
+[[items]]
+name = "cvkit"
+description = "Computer Vision Toolkit"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11849/20837_read-48539/"
+repository_url = "https://github.com/roboception/cvkit"
+tags = []
+
+[[items]]
 name = ""
 description = ""
 categories = [""]
