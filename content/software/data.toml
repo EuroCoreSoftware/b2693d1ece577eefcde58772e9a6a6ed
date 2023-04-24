@@ -242,6 +242,62 @@ paper_url = "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/AlexandrosP
 tags = []
 
 [[items]]
+name = "RobotEditor"
+description = "The RobotEditor is a modeling tool that allows to easily create models of scientific robots."
+categories = [""]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/748.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/roboteditor"
+tags = []
+
+[[items]]
+name = "Integrated Vision Toolkit (IVT)"
+description = "A open source software library for machine vision."
+categories = ["vision"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/749.php"
+repository_url = "https://ivt.sourceforge.net/"
+tags = []
+
+[[items]]
+name = "Simox"
+description = "A lightweight toolbox for the 3D simulation of robots and sampling based motion and grasp planning."
+categories = ["planning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/750.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/simox/simox"
+video_url = "https://vahrenka.mp/motion-planning-for-humanoid-robots/"
+paper_url = "https://link.springer.com/chapter/10.1007/978-3-642-33926-4_55"
+tags = []
+
+[[items]]
+name = "ArmarX"
+description = "A modular framework for the creation of modular and distributed robot control architectures."
+categories = ["framework"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/751.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/armarx"
+video_url = "https://www.youtube.com/watch?v=Ew3yuOMeFpU"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Vahrenkamp2015.pdf"
+tags = []
+
+[[items]]
+name = "Master Motor Map (MMM)"
+description = "A reference model of the human body, file formats and accompanying libraries for the generalization of human motions and mapping to robots."
+categories = ["modeling"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/752.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/mmm/core"
+video_url = "https://www.youtube.com/watch?v=7FZd18y2uGo"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Terlemez2014.pdf"
+tags = []
+# Additional repository: https://git.h2t.iar.kit.edu/sw/mmm/tools
+
+[[items]]
+name = "Deep Episodic Memory"
+description = "A novel deep neural network architecture for representing robot experiences in an episodic-like memory which facilitates encoding, recalling and predicting action experiences."
+categories = ["learning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/1724.php"
+repository_url = "https://github.com/jonasrothfuss/DeepEpisodicMemory"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/RothfussFerreira2018.pdf"
+tags = []
+
+[[items]]
 name = ""
 description = ""
 categories = [""]
