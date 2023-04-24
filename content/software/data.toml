@@ -172,6 +172,76 @@ tags = []
 # More papers:  "https://www.ai4europe.eu/sites/default/files/2021-05/mdm_report.pdf"
 
 [[items]]
+name = "ICUB-Manual"
+description = "Manual for the iCubNancy01 robot"
+categories = ["manual"]
+homepage_url = "https://github.com/inria-larsen/icub-manual/wiki"
+repository_url = "https://github.com/inria-larsen/icub-manual"
+tags = []
+# From Serena Ivaldi, there are more repositories for this robot: https://github.com/inria-larsen/icub-applications,
+# https://github.com/inria-larsen/icub-scripts, https://github.com/inria-larsen/router-scripts,
+# https://github.com/inria-larsen/icub-plot-data, https://github.com/inria-larsen/icub-assembly-collaborative,
+# https://github.com/inria-larsen/icub-on-a-chair, https://github.com/serena-ivaldi/taskRecorder, https://github.com/serena-ivaldi/taskRecorderGUI,
+# https://github.com/serena-ivaldi/taskPlayer, https://github.com/serena-ivaldi/WoZ
+
+[[items]]
+name = "HEAP: Chist-ERA"
+description = "Human-Guided Learning and Benchmarking of Robotic Heap Sorting project"
+categories = ["learning"]
+repository_url = "https://github.com/heap-chist-era"
+tags = []
+
+[[items]]
+name = "EMG for HRI"
+description = "EMG processing and using EMG for human-robot interaction (HRI) for the AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/emg-processing"
+paper_url = "https://hal.science/hal-01539731/document"
+tags = []
+# Also this repo: https://github.com/inria-larsen/ergo_prediction
+
+[[items]]
+name = "Activity recognition/prediciton using wearable sensor information"
+description = "Activity recognition/prediciton using wearable sensor information"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/activity-recognition-prediction-wearable"
+video_url = "https://www.youtube.com/watch?v=bPJ5HfE3wAw"
+tags = []
+
+
+[[items]]
+name = "Online activity recognition H2020 AnDy"
+description = "Activity recognition demo for H2020 AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/AnDy-demo-activity-recognition"
+tags = []
+
+[[items]]
+name = "Humanoids in Nancy"
+description = "Gitlab with code related to control, learning and teleoperation "
+categories = ["control, learning, teleoperation"]
+repository_url = "https://gitlab.inria.fr/locolearn"
+tags = []
+
+[[items]]
+name = "iCub Learning Trajectories, ProMP"
+description = "Subpart of the project 'icub-learning-trajectories' composed of different programs using ProMP"
+categories = [""]
+repository_url = "https://github.com/inria-larsen/icubLearningTrajectories"
+tags = []
+
+[[items]]
+name = "ProMP C++"
+description = "C++ library of Probabilistic Motion Primitives algorithms."
+categories = ["learning"]
+repository_url = "https://github.com/hucebot/promp"
+paper_url = "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/AlexandrosParaschos/promps_auro.pdf"
+tags = []
+
+[[items]]
 name = ""
 description = ""
 categories = [""]
@@ -181,4 +251,3 @@ video_url = ""
 paper_url = ""
 pypi = ""
 tags = []
-
