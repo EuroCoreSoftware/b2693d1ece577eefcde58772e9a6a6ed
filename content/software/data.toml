@@ -140,3 +140,228 @@ video_url = "https://www.youtube.com/watch?v=b9H-zOYWLbY"
 paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
 pypi = "toppra"
 tags = []
+
+[[items]]
+name = "Multi-Robot-GSPNR-toolbox"
+description = "MATLAb package that provides methods to model multi-robot coordination problems as generalized stochastic Petri nets with rewards (GSPNR)"
+categories = ["learning", "planning"]
+repository_url = "https://github.com/cazevedo/multi-robot-gspnr-toolbox"
+video_url = "https://www.youtube.com/watch?v=ghdTHn5xiNk"
+paper_url = "https://www.mdpi.com/2076-3417/11/24/12087"
+tags = []
+# More videos:  "https://www.youtube.com/watch?v=CH4iJs0rsIc", "https://www.youtube.com/watch?v=SzpZBFmJZn8"
+
+[[items]]
+name = "POMDP-IR Solver"
+description = "A decision-making framework for active perception with POMDPs."
+categories = ["planning", "vision"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/pomdp-ir-solver"
+video_url = "https://www.youtube.com/watch?v=3PCh-G0vCeA"
+paper_url = "https://ieeexplore.ieee.org/document/7759426"
+tags = []
+# More papers: "https://ieeexplore.ieee.org/document/7759426"
+
+[[items]]
+name = "Markov Decision Making (MDM)"
+description = "A library to support the deployment of decision-making methodologies"
+categories = ["planning"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/markov-decision-making"
+video_url = "https://www.youtube.com/watch?v=Ivx908SSzlk"
+paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8002674"
+tags = []
+# More papers:  "https://www.ai4europe.eu/sites/default/files/2021-05/mdm_report.pdf"
+
+[[items]]
+name = "ICUB-Manual"
+description = "Manual for the iCubNancy01 robot"
+categories = ["manual"]
+homepage_url = "https://github.com/inria-larsen/icub-manual/wiki"
+repository_url = "https://github.com/inria-larsen/icub-manual"
+tags = []
+# From Serena Ivaldi, there are more repositories for this robot: https://github.com/inria-larsen/icub-applications,
+# https://github.com/inria-larsen/icub-scripts, https://github.com/inria-larsen/router-scripts,
+# https://github.com/inria-larsen/icub-plot-data, https://github.com/inria-larsen/icub-assembly-collaborative,
+# https://github.com/inria-larsen/icub-on-a-chair, https://github.com/serena-ivaldi/taskRecorder, https://github.com/serena-ivaldi/taskRecorderGUI,
+# https://github.com/serena-ivaldi/taskPlayer, https://github.com/serena-ivaldi/WoZ
+
+[[items]]
+name = "HEAP: Chist-ERA"
+description = "Human-Guided Learning and Benchmarking of Robotic Heap Sorting project"
+categories = ["learning"]
+repository_url = "https://github.com/heap-chist-era"
+tags = []
+
+[[items]]
+name = "EMG for HRI"
+description = "EMG processing and using EMG for human-robot interaction (HRI) for the AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/emg-processing"
+paper_url = "https://hal.science/hal-01539731/document"
+tags = []
+# Also this repo: https://github.com/inria-larsen/ergo_prediction
+
+[[items]]
+name = "Activity recognition/prediciton using wearable sensor information"
+description = "Activity recognition/prediciton using wearable sensor information"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/activity-recognition-prediction-wearable"
+video_url = "https://www.youtube.com/watch?v=bPJ5HfE3wAw"
+tags = []
+
+
+[[items]]
+name = "Online activity recognition H2020 AnDy"
+description = "Activity recognition demo for H2020 AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/AnDy-demo-activity-recognition"
+tags = []
+
+[[items]]
+name = "Humanoids in Nancy"
+description = "Gitlab with code related to control, learning and teleoperation "
+categories = ["control, learning, teleoperation"]
+repository_url = "https://gitlab.inria.fr/locolearn"
+tags = []
+
+[[items]]
+name = "iCub Learning Trajectories, ProMP"
+description = "Subpart of the project 'icub-learning-trajectories' composed of different programs using ProMP"
+categories = [""]
+repository_url = "https://github.com/inria-larsen/icubLearningTrajectories"
+tags = []
+
+[[items]]
+name = "ProMP C++"
+description = "C++ library of Probabilistic Motion Primitives algorithms."
+categories = ["learning"]
+repository_url = "https://github.com/hucebot/promp"
+paper_url = "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/AlexandrosParaschos/promps_auro.pdf"
+tags = []
+
+[[items]]
+name = "RobotEditor"
+description = "The RobotEditor is a modeling tool that allows to easily create models of scientific robots."
+categories = [""]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/748.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/roboteditor"
+tags = []
+
+[[items]]
+name = "Integrated Vision Toolkit (IVT)"
+description = "A open source software library for machine vision."
+categories = ["vision"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/749.php"
+repository_url = "https://ivt.sourceforge.net/"
+tags = []
+
+[[items]]
+name = "Simox"
+description = "A lightweight toolbox for the 3D simulation of robots and sampling based motion and grasp planning."
+categories = ["planning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/750.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/simox/simox"
+video_url = "https://vahrenka.mp/motion-planning-for-humanoid-robots/"
+paper_url = "https://link.springer.com/chapter/10.1007/978-3-642-33926-4_55"
+tags = []
+
+[[items]]
+name = "ArmarX"
+description = "A modular framework for the creation of modular and distributed robot control architectures."
+categories = ["framework"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/751.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/armarx"
+video_url = "https://www.youtube.com/watch?v=Ew3yuOMeFpU"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Vahrenkamp2015.pdf"
+tags = []
+
+[[items]]
+name = "Master Motor Map (MMM)"
+description = "A reference model of the human body, file formats and accompanying libraries for the generalization of human motions and mapping to robots."
+categories = ["modeling"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/752.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/mmm/core"
+video_url = "https://www.youtube.com/watch?v=7FZd18y2uGo"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Terlemez2014.pdf"
+tags = []
+# Additional repository: https://git.h2t.iar.kit.edu/sw/mmm/tools
+
+[[items]]
+name = "Deep Episodic Memory"
+description = "A novel deep neural network architecture for representing robot experiences in an episodic-like memory which facilitates encoding, recalling and predicting action experiences."
+categories = ["learning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/1724.php"
+repository_url = "https://github.com/jonasrothfuss/DeepEpisodicMemory"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/RothfussFerreira2018.pdf"
+tags = []
+
+[[items]]
+name = "BlenderProc"
+description = "BlenderProc is a software to generate realistic images for the training of neural networks. "
+categories = ["rendering"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19074/30527_read-83759/"
+repository_url = "https://github.com/DLR-RM/BlenderProc"
+video_url = "https://user-images.githubusercontent.com/6104887/137109535-275a2aa3-f5fd-4173-9d16-a9a9b86f66e7.gif"
+paper_url = "https://joss.theoj.org/papers/10.21105/joss.04901"
+pypi = "blenderproc"
+tags = []
+
+[[items]]
+name = "3D Object Tracking"
+description = "In this repository, we share several algorithms and code of our ongoing research on 3D object tracking."
+categories = [""]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19085/30544_read-83761/"
+repository_url = "https://github.com/DLR-RM/3DObjectTracking"
+video_url = "https://www.youtube.com/watch?v=eYd_3TnJIaE"
+paper_url = "https://openaccess.thecvf.com/content/CVPR2022/papers/Stoiber_Iterative_Corresponding_Geometry_Fusing_Region_and_Depth_for_Highly_Efficient_CVPR_2022_paper.pdf"
+tags = []
+
+[[items]]
+name = "Augmented Autoencoders"
+description = "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images"
+categories = ["learning, vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-13864/24048_read-58570/"
+repository_url = "https://github.com/DLR-RM/AugmentedAutoencoder"
+video_url = "https://www.youtube.com/watch?v=jgb2eNNlPq4"
+paper_url = "https://openaccess.thecvf.com/content_ECCV_2018/html/Martin_Sundermeyer_Implicit_3D_Orientation_ECCV_2018_paper.html"
+tags = []
+
+[[items]]
+name = "RAFCON"
+description = "Visual state machine programming"
+categories = ["programming"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-4845/20104_read-47199/"
+repository_url = "https://github.com/DLR-RM/RAFCON"
+video_url = "https://www.youtube.com/watch?v=35dUykJandU"
+paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7759506"
+tags = []
+
+[[items]]
+name = "DLR CalDE and CalLab"
+description = "The DLR Camera Calibration Toolbox"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9201"
+repository_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9197"
+paper_url = "https://ieeexplore.ieee.org/document/4543398"
+tags = []
+
+[[items]]
+name = "cvkit"
+description = "Computer Vision Toolkit"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11849/20837_read-48539/"
+repository_url = "https://github.com/roboception/cvkit"
+tags = []
+
+[[items]]
+name = ""
+description = ""
+categories = [""]
+homepage_url = ""
+repository_url = ""
+video_url = ""
+paper_url = ""
+pypi = ""
+tags = []
