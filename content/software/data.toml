@@ -300,10 +300,10 @@ tags = []
 [[items]]
 name = "BlenderProc"
 description = "BlenderProc is a software to generate realistic images for the training of neural networks. "
-categories = ["rendering"]
+categories = ["vision"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19074/30527_read-83759/"
 repository_url = "https://github.com/DLR-RM/BlenderProc"
-video_url = "https://user-images.githubusercontent.com/6104887/137109535-275a2aa3-f5fd-4173-9d16-a9a9b86f66e7.gif"
+video_url = "https://www.youtube.com/watch?v=1AvY_iS6xQA"
 paper_url = "https://joss.theoj.org/papers/10.21105/joss.04901"
 pypi = "blenderproc"
 tags = []
