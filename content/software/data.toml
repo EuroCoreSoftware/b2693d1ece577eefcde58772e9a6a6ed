@@ -166,9 +166,9 @@ name = "Markov Decision Making (MDM)"
 description = "A library to support the deployment of decision-making methodologies"
 categories = ["planning"]
 homepage_url = "https://www.ai4europe.eu/research/ai-catalog/markov-decision-making"
-video_url = "https://www.youtube.com/watch?v=Ivx908SSzlk"
 paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8002674"
 tags = []
+# video_url = "https://www.youtube.com/watch?v=Ivx908SSzlk"
 # More papers:  "https://www.ai4europe.eu/sites/default/files/2021-05/mdm_report.pdf"
 
 [[items]]
@@ -188,7 +188,7 @@ tags = []
 name = "HEAP: Chist-ERA"
 description = "Human-Guided Learning and Benchmarking of Robotic Heap Sorting project"
 categories = ["learning"]
-repository_url = "https://github.com/heap-chist-era"
+homepage_url = "https://github.com/heap-chist-era"
 tags = []
 
 [[items]]
@@ -263,9 +263,9 @@ description = "A lightweight toolbox for the 3D simulation of robots and samplin
 categories = ["planning"]
 homepage_url = "https://h2t.anthropomatik.kit.edu/english/750.php"
 repository_url = "https://git.h2t.iar.kit.edu/sw/simox/simox"
-video_url = "https://vahrenka.mp/motion-planning-for-humanoid-robots/"
 paper_url = "https://link.springer.com/chapter/10.1007/978-3-642-33926-4_55"
 tags = []
+#video_url = "https://vahrenka.mp/motion-planning-for-humanoid-robots/"
 
 [[items]]
 name = "ArmarX"
@@ -300,10 +300,10 @@ tags = []
 [[items]]
 name = "BlenderProc"
 description = "BlenderProc is a software to generate realistic images for the training of neural networks. "
-categories = ["rendering"]
+categories = ["vision"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19074/30527_read-83759/"
 repository_url = "https://github.com/DLR-RM/BlenderProc"
-video_url = "https://user-images.githubusercontent.com/6104887/137109535-275a2aa3-f5fd-4173-9d16-a9a9b86f66e7.gif"
+video_url = "https://www.youtube.com/watch?v=1AvY_iS6xQA"
 paper_url = "https://joss.theoj.org/papers/10.21105/joss.04901"
 pypi = "blenderproc"
 tags = []
@@ -355,13 +355,13 @@ homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11849/20837_r
 repository_url = "https://github.com/roboception/cvkit"
 tags = []
 
-[[items]]
-name = ""
-description = ""
-categories = [""]
-homepage_url = ""
-repository_url = ""
-video_url = ""
-paper_url = ""
-pypi = ""
-tags = []
+#[[items]]
+#name = ""
+#description = ""
+#categories = [""]
+#homepage_url = ""
+#repository_url = ""
+#video_url = ""
+#paper_url = ""
+#pypi = ""
+#tags = []
