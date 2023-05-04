@@ -1,5 +1,5 @@
 +++
-title = "Others"
-description = "Various other software for robotics"
+title = "Miscellaneous"
+description = "Miscellaneous other robotics software"
 aliases = ["/categories/others"]
 +++
