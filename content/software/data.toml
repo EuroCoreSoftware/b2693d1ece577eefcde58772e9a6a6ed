@@ -222,7 +222,7 @@ tags = []
 [[items]]
 name = "Humanoids in Nancy"
 description = "Gitlab with code related to control, learning and teleoperation "
-categories = ["control, learning, teleoperation"]
+categories = ["control"]
 repository_url = "https://gitlab.inria.fr/locolearn"
 tags = []
 
@@ -280,7 +280,7 @@ tags = []
 [[items]]
 name = "Master Motor Map (MMM)"
 description = "A reference model of the human body, file formats and accompanying libraries for the generalization of human motions and mapping to robots."
-categories = ["modeling"]
+categories = ["others"]
 homepage_url = "https://h2t.anthropomatik.kit.edu/english/752.php"
 repository_url = "https://git.h2t.iar.kit.edu/sw/mmm/core"
 video_url = "https://www.youtube.com/watch?v=7FZd18y2uGo"
@@ -311,7 +311,7 @@ tags = []
 [[items]]
 name = "3D Object Tracking"
 description = "In this repository, we share several algorithms and code of our ongoing research on 3D object tracking."
-categories = [""]
+categories = ["vision"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19085/30544_read-83761/"
 repository_url = "https://github.com/DLR-RM/3DObjectTracking"
 video_url = "https://www.youtube.com/watch?v=eYd_3TnJIaE"
@@ -321,7 +321,7 @@ tags = []
 [[items]]
 name = "Augmented Autoencoders"
 description = "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images"
-categories = ["learning, vision"]
+categories = ["vision"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-13864/24048_read-58570/"
 repository_url = "https://github.com/DLR-RM/AugmentedAutoencoder"
 video_url = "https://www.youtube.com/watch?v=jgb2eNNlPq4"
