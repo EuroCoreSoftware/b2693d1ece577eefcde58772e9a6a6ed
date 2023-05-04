@@ -144,7 +144,7 @@ tags = []
 [[items]]
 name = "Multi-Robot-GSPNR-toolbox"
 description = "MATLAb package that provides methods to model multi-robot coordination problems as generalized stochastic Petri nets with rewards (GSPNR)"
-categories = ["learning", "planning"]
+categories = ["learning"]
 repository_url = "https://github.com/cazevedo/multi-robot-gspnr-toolbox"
 video_url = "https://www.youtube.com/watch?v=ghdTHn5xiNk"
 paper_url = "https://www.mdpi.com/2076-3417/11/24/12087"
@@ -154,7 +154,7 @@ tags = []
 [[items]]
 name = "POMDP-IR Solver"
 description = "A decision-making framework for active perception with POMDPs."
-categories = ["planning", "vision"]
+categories = ["vision"]
 homepage_url = "https://www.ai4europe.eu/research/ai-catalog/pomdp-ir-solver"
 video_url = "https://www.youtube.com/watch?v=3PCh-G0vCeA"
 paper_url = "https://ieeexplore.ieee.org/document/7759426"
@@ -174,7 +174,7 @@ tags = []
 [[items]]
 name = "ICUB-Manual"
 description = "Manual for the iCubNancy01 robot"
-categories = ["manual"]
+categories = ["others"]
 homepage_url = "https://github.com/inria-larsen/icub-manual/wiki"
 repository_url = "https://github.com/inria-larsen/icub-manual"
 tags = []
@@ -229,7 +229,7 @@ tags = []
 [[items]]
 name = "iCub Learning Trajectories, ProMP"
 description = "Subpart of the project 'icub-learning-trajectories' composed of different programs using ProMP"
-categories = [""]
+categories = ["others"]
 repository_url = "https://github.com/inria-larsen/icubLearningTrajectories"
 tags = []
 
@@ -244,7 +244,7 @@ tags = []
 [[items]]
 name = "RobotEditor"
 description = "The RobotEditor is a modeling tool that allows to easily create models of scientific robots."
-categories = [""]
+categories = ["others"]
 homepage_url = "https://h2t.anthropomatik.kit.edu/english/748.php"
 repository_url = "https://git.h2t.iar.kit.edu/sw/roboteditor"
 tags = []
@@ -270,7 +270,7 @@ tags = []
 [[items]]
 name = "ArmarX"
 description = "A modular framework for the creation of modular and distributed robot control architectures."
-categories = ["framework"]
+categories = ["others"]
 homepage_url = "https://h2t.anthropomatik.kit.edu/english/751.php"
 repository_url = "https://git.h2t.iar.kit.edu/sw/armarx"
 video_url = "https://www.youtube.com/watch?v=Ew3yuOMeFpU"
@@ -331,7 +331,7 @@ tags = []
 [[items]]
 name = "RAFCON"
 description = "Visual state machine programming"
-categories = ["programming"]
+categories = ["others"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-4845/20104_read-47199/"
 repository_url = "https://github.com/DLR-RM/RAFCON"
 video_url = "https://www.youtube.com/watch?v=35dUykJandU"
@@ -358,7 +358,7 @@ tags = []
 [[items]]
 name = "openEASE"
 description = "openEASE is a web-based knowledge service providing robot and human activity data. It contains semantically annotated data of manipulation actions, including the environment the agent is acting in, the objects it manipulates, the task it performs, and the behavior it generates."
-categories = ["planning", "ik"]
+categories = ["others"]
 homepage_url = "http://www.open-ease.org/"
 repository_url = "https://github.com/ease-crc/openease"
 video_url = "https://www.youtube.com/watch?v=iu_Y7mxDjgA"
@@ -368,7 +368,7 @@ tags = []
 [[items]]
 name = "KnowRob"
 description = "KnowRob is a knowledge processing system designed for robots. Its purpose is to equip robots with the capability to organize information in re-usable knowledge chunks, and to perform reasoning in an expressive logic. It further provides a set of tools for visualization and acquisition of knowledge."
-categories = ["planning", "ik"]
+categories = ["others"]
 homepage_url = "https://knowrob.org/"
 repository_url = "https://github.com/knowrob/knowrob"
 video_url = "https://www.youtube.com/watch?v=IMF7T3YliGs"
@@ -378,7 +378,7 @@ tags = []
 [[items]]
 name = "Giskard(py)"
 description = "Giskard is an open source motion planning framework for ROS, which uses constraint and optimization based task space control to generate trajectories for the whole body of mobile manipulators."
-categories = ["planning", "ik"]
+categories = ["others"]
 homepage_url = "https://ai.uni-bremen.de/robocup19"
 repository_url = "https://github.com/SemRoCo/giskardpy"
 tags = []
