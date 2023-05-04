@@ -78,7 +78,7 @@
         
         <div class="has-text-left mb-3">
 
-            {% if github_repo %}
+            {% if github_repo and github_repo is starting_with("https://github.com/") %}
             <a href="{{ repository_url }}/stargazers">
                 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ github_repo }}?label=Github%20stars">
             </a>

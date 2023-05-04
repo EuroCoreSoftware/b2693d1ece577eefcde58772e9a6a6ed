@@ -23,7 +23,7 @@
     <meta property="og:image:height" content="200">
     <meta property="og:site_name" content="{{ config.title }}">
 
-    <!-- <link rel="shortcut icon" href="{{ get_url(path='/favicon.ico')}}" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{ get_url(path='/fav_eurobin.png')}}" type="image/vnd.microsoft.icon" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -69,7 +69,8 @@
     {% block masthead %}
     <section class="hero is-small is-info">
         <div class="hero-body has-text-centered">
-            <p class="title">
+            <img src="https://www.eurobin-project.eu/images/euROBIN_img/logo_eurobin193x54px.png" alt="euROBIN logo" style="width: 300px">
+            <p class="title is-size-1">
                 EuroCore Software
             </p>
             <p class="subtitle">
@@ -85,10 +86,10 @@
         {% block content %} {% endblock %}
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer is-info" id="footer">
         <div class="has-text-centered">
             <p>
-                <strong>EuroCore
+                EuroCore
                     is powered by <a href="https://github.com/getzola/zola">Zola</a>, a Rust static site generator.
             </p>
             <p>
