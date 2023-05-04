@@ -355,6 +355,34 @@ homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11849/20837_r
 repository_url = "https://github.com/roboception/cvkit"
 tags = []
 
+[[items]]
+name = "openEASE"
+description = "openEASE is a web-based knowledge service providing robot and human activity data. It contains semantically annotated data of manipulation actions, including the environment the agent is acting in, the objects it manipulates, the task it performs, and the behavior it generates."
+categories = ["planning", "ik"]
+homepage_url = "http://www.open-ease.org/"
+repository_url = "https://github.com/ease-crc/openease"
+video_url = "https://www.youtube.com/watch?v=iu_Y7mxDjgA"
+paper_url = "http://www.open-ease.org/wp-content/uploads/2015/03/knowrob-s.pdf"
+tags = []
+
+[[items]]
+name = "KnowRob"
+description = "KnowRob is a knowledge processing system designed for robots. Its purpose is to equip robots with the capability to organize information in re-usable knowledge chunks, and to perform reasoning in an expressive logic. It further provides a set of tools for visualization and acquisition of knowledge."
+categories = ["planning", "ik"]
+homepage_url = "https://knowrob.org/"
+repository_url = "https://github.com/knowrob/knowrob"
+video_url = "https://www.youtube.com/watch?v=IMF7T3YliGs"
+paper_url = "https://ieeexplore.ieee.org/document/8460964"
+tags = []
+
+[[items]]
+name = "Giskard(py)"
+description = "Giskard is an open source motion planning framework for ROS, which uses constraint and optimization based task space control to generate trajectories for the whole body of mobile manipulators."
+categories = ["planning", "ik"]
+homepage_url = "https://ai.uni-bremen.de/robocup19"
+repository_url = "https://github.com/SemRoCo/giskardpy"
+tags = []
+
 #[[items]]
 #name = ""
 #description = ""
