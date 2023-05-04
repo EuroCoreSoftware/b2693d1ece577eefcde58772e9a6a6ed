@@ -321,7 +321,7 @@ tags = []
 [[items]]
 name = "Augmented Autoencoders"
 description = "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images"
-categories = ["vision"]
+categories = ["learning","vision"]
 homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-13864/24048_read-58570/"
 repository_url = "https://github.com/DLR-RM/AugmentedAutoencoder"
 video_url = "https://www.youtube.com/watch?v=jgb2eNNlPq4"
@@ -378,7 +378,7 @@ tags = []
 [[items]]
 name = "Giskard(py)"
 description = "Giskard is an open source motion planning framework for ROS, which uses constraint and optimization based task space control to generate trajectories for the whole body of mobile manipulators."
-categories = ["others"]
+categories = ["planning"]
 homepage_url = "https://ai.uni-bremen.de/robocup19"
 repository_url = "https://github.com/SemRoCo/giskardpy"
 tags = []
