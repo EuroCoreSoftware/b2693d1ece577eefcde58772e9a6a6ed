@@ -20,7 +20,7 @@ jobs:
     - name: Install Zola
       run: curl -L ${BASE_URL}/${VERS}/zola-${VERS}-${ARCH}.tar.gz | tar -xz
     - run: ./zola --version
-    - run: ./zola build -u /
+    - run: ./zola build -u https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/
     - name: Deploy
       if: github.ref == 'refs/heads/master'
       uses: crazy-max/ghaction-github-pages@v3
