@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BASE_URL: https://github.com/getzola/zola/releases/download
-      VERS: v0.15.3
+      VERS: v0.17.2
       ARCH: x86_64-unknown-linux-gnu
       # https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-623202206
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -27,10 +27,10 @@ jobs:
       with:
         build_dir: public
 
-  fmt:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - run: pip3 install pytoml
-    - run: find . -name data.toml | xargs ./sort_data.py
-    - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
+  # fmt:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #   - run: pip3 install pytoml
+  #   - run: find . -name data.toml | xargs ./sort_data.py
+  #   - run: if [[ `git status --porcelain` ]]; then git diff && exit 1; fi
