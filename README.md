@@ -6,68 +6,58 @@ A directory of robotics software you can use with your robot.
 
 ## Contribute
 
-EuroCore uses [semantic-ui](https://semantic-ui.com/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
+1. Edit `software/data.toml` file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
-1. Navigate to whichever folder in `/content` best fits your project.
-
-2. Edit that folder's `data.toml` file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
-
-3. Create a new entry, following the schema described below. Note that all entries should be sorted alphabetically by the `name` field, ignoring case. There is a CI check to ensure this is done correctly - you can use the `sort_data.py` script to automatically fix a file.
+2. Create a new entry, following the schema described below.
 
 **All done!** We do greatly appreciate PRs, but if you're not comfortable with this process, you're welcome to open an issue requesting the addition of your project instead.
 
-### Schema
 
+## How to add a new project?
+
+Add an entry to [data.toml](software/data.toml):
 ```toml
 [[items]]
-# The name of the item. Mandatory.
-name = "My crate" 
 
-# A short description of the item. Optional, but recommended.
-description = "My extremely cool Rust crate" 
+# [Mandatory] Name of the project
+name = "Stable-Baselines3"
 
-# The categories that your item should be assigned to. Mandatory.
-categories = ["2drendering", "engines"]
+# [Mandatory] Short description, can be multiline
+description = "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms."
 
-# An image representing the item. Files should be checked in to
-# /static/assets/img/, and the path should be absolute.
-# Optional, but highly recommended for games!.
-image = "/assets/img/logo.png"
+# [Mandatory] The different categories that project belongs to, for now ["learning", "planning", "control", "vision", "ik"]
+categories = ["learning", "vision"]
 
-# A link to the item's page on Crates.io. Optional.
-crate_url = "https://crates.io/crates/mycrate"
+# [Mandatory] Github repository
+repository_url = "https://github.com/DLR-RM/stable-baselines3"
 
-# A link to the item's VCS repository. Optional.
-repository_url = "https://github.com/username/repo"
+# [Optional] Homepage or documentation URL
+homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
 
-# A link to the item's homepage. Optional.
-homepage_url = "https://mycrate.com"
+# [Optional] YouTube video URL, should respect the format "https://www.youtube.com/watch?v=VIDEO_ID
+video_url = "https://www.youtube.com/watch?v=f_FmDFrYkPM"
 
-# A link to the item's Gitter chat. Optional.
-gitter_url = "https://gitter.im/mycrate"
+# [Optional] URL to associated paper (or one of the associated paper)
+paper_url = "http://jmlr.org/papers/v22/20-1364.html"
+
+# [Optional] URL to logo image
+logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
+
+# Not used for now, a list of keywords, will be used for search/filter later
+tags = []
+
+# [Optional] Name of the python package published on PyPI (`pip install package_name`)
+pypi = "stable-baselines3"
+
 ```
-
-You can also tell the site to pull data directly from an external source:
-
-```toml
-[[items]]
-# Pull data from Crates.io:
-name = "mycratename"
-source = "crates"
-categories = ["mycategory"]
-
-[[items]]
-# Pull data from GitHub:
-name = "username/repo"
-source = "github"
-categories = ["mycategory"]
-```
-
-Extra keys can be added to items that are pulled from external data (e.g. to add a homepage URL, or override some of the fetched data).
 
 ### Enhance this website
 
-If you're comfortable with semantic-ui and Zola please reach out to us in the Issues with your enhancement ideas or just to state your willingness to contribute.
+EuroCore uses [bulma](https://bulma.io/), and [zola](https://github.com/getzola/zola) the Rust static site generator.
+
+
+If you're comfortable with bulma and Zola please reach out to us in the Issues with your enhancement ideas or just to state your willingness to contribute.
+
 
 ### Errors
 
