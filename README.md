@@ -6,7 +6,7 @@ A directory of robotics software you can use with your robot.
 
 ## Contribute
 
-1. Edit `content/software/data.toml` file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
+1. Edit [`content/software/data.toml`](content/software/data.toml) file in any plain text editor or straight through [GitHub's editor](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
 2. Create a new entry, following the schema described below.
 
