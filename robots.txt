@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/sitemap.xml
