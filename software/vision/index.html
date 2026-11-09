@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Computer Vision | EuroCore Software</title>
+
+    <meta property="og:title" content="Computer Vision">
+    <meta property="og:url" content="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">
+    <meta property="og:description" content="Sensor calibration, SLAM, point cloud, tracking, pose estimation">
+    <link rel="canonical" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">
+
+
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/assets/img/rust-logo-128x128-blk-v2.png"> -->
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:site_name" content="EuroCore Software">
+
+    <link rel="shortcut icon" href="https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/fav_eurobin.png" type="image/vnd.microsoft.icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-divider@1.1.0/dist/bulma-divider.min.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css"> -->
+    <link rel="stylesheet" href="https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/main.css">
+    
+     
+</head>
+
+<body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <span>Home</span>
+                        </span>
+                    </a>
+
+                    <a class="navbar-item" href="https://eurocoresoftware.github.io/b2693d1ece577eefcde58772e9a6a6ed/#softwares">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fas fa-code"></i>
+                            </span>
+                            <span>Softwares</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero is-small is-info">
+        <div class="hero-body has-text-centered">
+            <img src="https://www.eurobin-project.eu/images/euROBIN_img/logo_eurobin193x54px.png" alt="euROBIN logo" style="width: 300px">
+            <p class="title is-size-1">
+                EuroCore Software
+            </p>
+            <p class="subtitle">
+                Software That Runs on Real Robots
+            </p>
+        </div>
+    </section>
+    
+
+
+
+    <main class="container">
+        
+
+
+
+
+<section class="section has-text-centered">
+    <p>
+        <span class="icon is-large">
+            <i class="fas fa-2x fa-code"></i>
+        </span>
+    </p>
+    <h1 class="title">
+        Computer Vision
+    </h1>
+    <div class="subtitle">
+        <p>Sensor calibration, SLAM, point cloud, tracking, pose estimation</p>
+    </div>
+</section>
+
+
+<section class="section">
+    <hr/>
+
+    <div class="tile is-ancestor is-flex-wrap-wrap">
+        
+        
+            
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr" aria-label="Github link for Kalibr">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+            <a href="#kalibr" id="kalibr" aria-label="Permanent link for Kalibr">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr" class="has-text-info">Kalibr</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/puNXsnrYWTY"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/puNXsnrYWTY&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/puNXsnrYWTY?autoplay=1><img src=https://img.youtube.com/vi/puNXsnrYWTY/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ethz-asl&#x2F;kalibr?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/ethz-asl&#x2F;kalibr?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/ethz-asl&#x2F;kalibr">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/ethz-asl&#x2F;kalibr">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;ethz-asl&#x2F;kalibr">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/ethz-asl&#x2F;kalibr">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;abstract&#x2F;document&#x2F;7487628&#x2F;">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>The Kalibr visual-inertial calibration toolbox</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap" aria-label="Github link for OctoMap">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="http:&#x2F;&#x2F;octomap.github.io&#x2F;" aria-label="Website link for OctoMap">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#octomap" id="octomap" aria-label="Permanent link for OctoMap">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="http:&#x2F;&#x2F;octomap.github.io&#x2F;" class="has-text-info">OctoMap</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/7ZsxJzR14rc"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/7ZsxJzR14rc&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/7ZsxJzR14rc?autoplay=1><img src=https://img.youtube.com/vi/7ZsxJzR14rc/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/OctoMap&#x2F;octomap?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/OctoMap&#x2F;octomap?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/OctoMap&#x2F;octomap">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/OctoMap&#x2F;octomap">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;OctoMap&#x2F;octomap">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/OctoMap&#x2F;octomap">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;courses.cs.washington.edu&#x2F;courses&#x2F;cse571&#x2F;16au&#x2F;slides&#x2F;hornung13auro.pdf">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, the viewer octovis, and dynamicEDT3D.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+            
+            <a class="image mt-auto" href="http:&#x2F;&#x2F;octomap.github.io&#x2F;">
+            
+                <img style="max-height: 80px; width:auto; height:auto; margin:auto;" src="http:&#x2F;&#x2F;octomap.github.io&#x2F;octomap_tree.png"
+                    alt="Picture of OctoMap">
+            
+            </a>
+            
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2" aria-label="Github link for ORB-SLAM 2">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;webdiis.unizar.es&#x2F;~raulmur&#x2F;orbslam&#x2F;" aria-label="Website link for ORB-SLAM 2">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#orb-slam-2" id="orb-slam-2" aria-label="Permanent link for ORB-SLAM 2">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;webdiis.unizar.es&#x2F;~raulmur&#x2F;orbslam&#x2F;" class="has-text-info">ORB-SLAM 2</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/ufvPS5wJAx0"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/ufvPS5wJAx0&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/ufvPS5wJAx0?autoplay=1><img src=https://img.youtube.com/vi/ufvPS5wJAx0/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/raulmur&#x2F;ORB_SLAM2?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/raulmur&#x2F;ORB_SLAM2?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/raulmur&#x2F;ORB_SLAM2">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/raulmur&#x2F;ORB_SLAM2">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;raulmur&#x2F;ORB_SLAM2">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/raulmur&#x2F;ORB_SLAM2">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;abstract&#x2F;document&#x2F;7946260&#x2F;">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3" aria-label="Github link for ORB-SLAM 3">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+            <a href="#orb-slam-3" id="orb-slam-3" aria-label="Permanent link for ORB-SLAM 3">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3" class="has-text-info">ORB-SLAM 3</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/HyLNq-98LRo"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/HyLNq-98LRo&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/HyLNq-98LRo?autoplay=1><img src=https://img.youtube.com/vi/HyLNq-98LRo/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/UZ-SLAMLab&#x2F;ORB_SLAM3?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/UZ-SLAMLab&#x2F;ORB_SLAM3?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/UZ-SLAMLab&#x2F;ORB_SLAM3">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/UZ-SLAMLab&#x2F;ORB_SLAM3">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;UZ-SLAMLab&#x2F;ORB_SLAM3">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/UZ-SLAMLab&#x2F;ORB_SLAM3">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;abstract&#x2F;document&#x2F;9440682&#x2F;">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl" aria-label="Github link for Point Cloud Library">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;pointclouds.org&#x2F;" aria-label="Website link for Point Cloud Library">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#point-cloud-library" id="point-cloud-library" aria-label="Permanent link for Point Cloud Library">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;pointclouds.org&#x2F;" class="has-text-info">Point Cloud Library</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/DLvO0b2NBXE"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/DLvO0b2NBXE&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/DLvO0b2NBXE?autoplay=1><img src=https://img.youtube.com/vi/DLvO0b2NBXE/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/PointCloudLibrary&#x2F;pcl?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/PointCloudLibrary&#x2F;pcl?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/PointCloudLibrary&#x2F;pcl">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/PointCloudLibrary&#x2F;pcl">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/PointCloudLibrary&#x2F;pcl">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;abstract&#x2F;document&#x2F;5980567&#x2F;">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>Standalone, large scale, open project for 2D&#x2F;3D image and point cloud processing.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+            
+            <a class="image mt-auto" href="https:&#x2F;&#x2F;pointclouds.org&#x2F;">
+            
+                <img style="max-height: 80px; width:auto; height:auto; margin:auto;" src="https:&#x2F;&#x2F;github.com&#x2F;PointCloudLibrary&#x2F;pcl&#x2F;raw&#x2F;master&#x2F;pcl.png"
+                    alt="Picture of Point Cloud Library">
+            
+            </a>
+            
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.ai4europe.eu&#x2F;research&#x2F;ai-catalog&#x2F;pomdp-ir-solver" aria-label="Website link for POMDP-IR Solver">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#pomdp-ir-solver" id="pomdp-ir-solver" aria-label="Permanent link for POMDP-IR Solver">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.ai4europe.eu&#x2F;research&#x2F;ai-catalog&#x2F;pomdp-ir-solver" class="has-text-info">POMDP-IR Solver</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/3PCh-G0vCeA"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/3PCh-G0vCeA&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/3PCh-G0vCeA?autoplay=1><img src=https://img.youtube.com/vi/3PCh-G0vCeA/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;7759426">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>A decision-making framework for active perception with POMDPs.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;ivt.sourceforge.net&#x2F;" aria-label="Github link for Integrated Vision Toolkit (IVT)">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;h2t.anthropomatik.kit.edu&#x2F;english&#x2F;749.php" aria-label="Website link for Integrated Vision Toolkit (IVT)">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#integrated-vision-toolkit-ivt" id="integrated-vision-toolkit-ivt" aria-label="Permanent link for Integrated Vision Toolkit (IVT)">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;h2t.anthropomatik.kit.edu&#x2F;english&#x2F;749.php" class="has-text-info">Integrated Vision Toolkit (IVT)</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>A open source software library for machine vision.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc" aria-label="Github link for BlenderProc">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-19074&#x2F;30527_read-83759&#x2F;" aria-label="Website link for BlenderProc">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#blenderproc" id="blenderproc" aria-label="Permanent link for BlenderProc">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-19074&#x2F;30527_read-83759&#x2F;" class="has-text-info">BlenderProc</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/1AvY_iS6xQA"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/1AvY_iS6xQA&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/1AvY_iS6xQA?autoplay=1><img src=https://img.youtube.com/vi/1AvY_iS6xQA/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DLR-RM&#x2F;BlenderProc?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/DLR-RM&#x2F;BlenderProc?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/DLR-RM&#x2F;BlenderProc">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/DLR-RM&#x2F;BlenderProc">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;BlenderProc">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/DLR-RM&#x2F;BlenderProc">
+            </a>
+
+            
+            
+            <a href="https://pypi.org/project/blenderproc">
+                <img src="https://img.shields.io/pypi/v/blenderproc"
+                    alt="PyPi version">
+            </a>
+
+            <a href="https://pypi.org/project/blenderproc">
+                <img src="https://static.pepy.tech/personalized-badge/blenderproc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=downloads/month"
+                    alt="Download count for blenderproc">
+            </a>
+            
+            
+            <a href="https:&#x2F;&#x2F;joss.theoj.org&#x2F;papers&#x2F;10.21105&#x2F;joss.04901">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>BlenderProc is a software to generate realistic images for the training of neural networks. </p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking" aria-label="Github link for 3D Object Tracking">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-19085&#x2F;30544_read-83761&#x2F;" aria-label="Website link for 3D Object Tracking">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#3d-object-tracking" id="3d-object-tracking" aria-label="Permanent link for 3D Object Tracking">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-19085&#x2F;30544_read-83761&#x2F;" class="has-text-info">3D Object Tracking</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/eYd_3TnJIaE"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/eYd_3TnJIaE&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/eYd_3TnJIaE?autoplay=1><img src=https://img.youtube.com/vi/eYd_3TnJIaE/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DLR-RM&#x2F;3DObjectTracking?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/DLR-RM&#x2F;3DObjectTracking?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/DLR-RM&#x2F;3DObjectTracking">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/DLR-RM&#x2F;3DObjectTracking">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;3DObjectTracking">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/DLR-RM&#x2F;3DObjectTracking">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content&#x2F;CVPR2022&#x2F;papers&#x2F;Stoiber_Iterative_Corresponding_Geometry_Fusing_Region_and_Depth_for_Highly_Efficient_CVPR_2022_paper.pdf">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>In this repository, we share several algorithms and code of our ongoing research on 3D object tracking.</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder" aria-label="Github link for Augmented Autoencoders">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-13864&#x2F;24048_read-58570&#x2F;" aria-label="Website link for Augmented Autoencoders">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#augmented-autoencoders" id="augmented-autoencoders" aria-label="Permanent link for Augmented Autoencoders">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-13864&#x2F;24048_read-58570&#x2F;" class="has-text-info">Augmented Autoencoders</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;learning&#x2F;">Machine Learning</a>
+                <span>·</span>
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+            
+
+<div class="image is-16by9">
+    <!-- <iframe
+        class="has-ratio"
+        src="https://www.youtube-nocookie.com/embed/jgb2eNNlPq4"
+        allowfullscreen></iframe> -->
+    
+        <!-- Lazy loading trick from https://css-tricks.com/lazy-load-embedded-youtube-videos/
+            we can also use &#x25BA; instead of the unicode play button -->
+        <iframe class="has-ratio" src="https://www.youtube-nocookie.com/embed/jgb2eNNlPq4&autoplay=1"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                span{height:1.8em;text-align:center;font:48px/1.8 sans-serif;color:white;text-shadow:0 0 0.5em black;
+                border-radius: 20px; background-color: rgba(62,142,208, 0.5);
+                width: 3em;
+                align-items:center; margin-left:35%}
+            
+            
+                </style>
+                <a href=https://www.youtube-nocookie.com/embed/jgb2eNNlPq4?autoplay=1><img src=https://img.youtube.com/vi/jgb2eNNlPq4/hqdefault.jpg>
+                        <div class='youtube'>
+                            <span class='arrow'>▶</span>
+                        </div>
+                
+                </a>" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        loading="lazy"></iframe>
+
+
+</div>
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DLR-RM&#x2F;AugmentedAutoencoder?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/DLR-RM&#x2F;AugmentedAutoencoder?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/DLR-RM&#x2F;AugmentedAutoencoder">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/DLR-RM&#x2F;AugmentedAutoencoder">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;DLR-RM&#x2F;AugmentedAutoencoder">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/DLR-RM&#x2F;AugmentedAutoencoder">
+            </a>
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ECCV_2018&#x2F;html&#x2F;Martin_Sundermeyer_Implicit_3D_Orientation_ECCV_2018_paper.html">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>Implicit 3D Orientation Learning for 6D Object Detection from RGB Images</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-3925&#x2F;6084_read-9197" aria-label="Github link for DLR CalDE and CalLab">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-3925&#x2F;6084_read-9201" aria-label="Website link for DLR CalDE and CalLab">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#dlr-calde-and-callab" id="dlr-calde-and-callab" aria-label="Permanent link for DLR CalDE and CalLab">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-3925&#x2F;6084_read-9201" class="has-text-info">DLR CalDE and CalLab</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;4543398">
+                <img src="https://img.shields.io/badge/paper-available-brightgreen" alt="Paper available">
+            </a>
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>The DLR Camera Calibration Toolbox</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+                    
+
+
+    
+
+
+
+
+            
+                  
+
+                     
+
+
+
+    
+
+
+<div class="tile is-6 is-parent has-text-centered">
+    <div class="tile item is-child box">  
+        <div class="has-text-right mb-3">
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit" aria-label="Github link for cvkit">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fab fa-lg fa-github"></i>
+                    </span>
+                </a>
+                
+
+
+            
+
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-11849&#x2F;20837_read-48539&#x2F;" aria-label="Website link for cvkit">
+                    <span class="icon is-medium has-text-info">
+                        <i class="fas fa-lg fa-home"></i>
+                    </span>
+                </a>
+            
+            <a href="#cvkit" id="cvkit" aria-label="Permanent link for cvkit">
+                <span class="icon is-medium has-text-info">
+                    <i class="fas fa-lg fa-hashtag"></i>
+                </span>
+            </a>
+   
+        </div>
+
+        <div class="title">
+            
+                <a href="https:&#x2F;&#x2F;www.dlr.de&#x2F;rm&#x2F;en&#x2F;desktopdefault.aspx&#x2F;tabid-11849&#x2F;20837_read-48539&#x2F;" class="has-text-info">cvkit</a>
+            
+        </div>
+
+        <div class="mb-4">
+            
+                
+
+                <a class="has-text-grey" href="https:&#x2F;&#x2F;eurocoresoftware.github.io&#x2F;b2693d1ece577eefcde58772e9a6a6ed&#x2F;software&#x2F;vision&#x2F;">Computer Vision</a>
+                
+            
+        </div>
+
+
+        
+
+        <hr class="mt-3 mb-3" />
+        
+        
+        <div class="has-text-left mb-3">
+
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit/stargazers">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/roboception&#x2F;cvkit?label=Github%20stars">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit/forks">
+                <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/roboception&#x2F;cvkit?label=Github%20forks">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit/commits">
+                <img alt="GitHub Repo last commit" src="https://img.shields.io/github/last-commit/roboception&#x2F;cvkit">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit">
+                <img alt="GitHub Repo license" src="https://img.shields.io/github/license/roboception&#x2F;cvkit">
+            </a>
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;roboception&#x2F;cvkit">
+                <img alt="GitHub Repo top language" src="https://img.shields.io/github/languages/top/roboception&#x2F;cvkit">
+            </a>
+
+            
+            
+            
+        </div>
+
+        <div class="description has-text-justified mb-auto">
+            <p>Computer Vision Toolkit</p>
+        </div>
+
+        <span class="mb-6"></span>
+
+        
+
+
+ 
+
+    </div>
+</div>
+
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="footer is-info" id="footer">
+        <div class="has-text-centered">
+            <p>
+                EuroCore
+                    is powered by <a href="https://github.com/getzola/zola">Zola</a>, a Rust static site generator.
+            </p>
+            <p>
+                Inspired by <a href="https://arewegameyet.rs/"">arewegameyet</a>, <a href="
+                    https://www.arewewebyet.org/">arewewebyet</a>, and <a
+                    href="https://www.arewelearningyet.com/">arewelearningyet</a>.
+            </p>
+        </div>
+
+    </footer>
+
+    <a href="#" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    
+    
+     
+</body>
+
+</html>
