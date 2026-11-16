@@ -1,0 +1,395 @@
+[[items]]
+name = "Control Toolbox"
+description = "An Open-Source C++ Library for Robotics, Optimal and Model Predictive Control"
+categories = ["control"]
+repository_url = "https://github.com/ethz-adrl/control-toolbox"
+video_url = "https://www.youtube.com/watch?v=Y7-1CBqs4x4"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8376281/"
+tags = []
+
+[[items]]
+name = "dmpbbo"
+description = "Python/C++ library for Dynamical Movement Primitives and Black-Box Optimization."
+categories = ["learning"]
+repository_url = "https://github.com/stulp/dmpbbo"
+video_url = "https://www.youtube.com/watch?v=jkaRO8J_1XI"
+paper_url = "https://www.theoj.org/joss-papers/joss.01225/10.21105.joss.01225.pdf"
+tags = []
+
+[[items]]
+name = "Kalibr"
+description = "The Kalibr visual-inertial calibration toolbox"
+categories = ["vision"]
+repository_url = "https://github.com/ethz-asl/kalibr"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/7487628/"
+video_url = "https://www.youtube.com/watch?v=puNXsnrYWTY"
+tags = []
+
+[[items]]
+name = "limbo"
+description = " A lightweight framework for Gaussian processes and Bayesian optimization of black-box functions (C++11)."
+categories = ["learning"]
+homepage_url = "http://resibots.eu/limbo/"
+repository_url = "https://github.com/resibots/limbo"
+video_url = "https://www.youtube.com/watch?v=T-c17RKh3uE"
+paper_url = "https://joss.theoj.org/papers/10.21105/joss.00545"
+logo_url = "https://github.com/resibots/limbo/raw/master/docs/logo/logo_limbo.png"
+tags = []
+
+[[items]]
+name = "MoveIt!"
+description = "Easy-to-use open source robotics manipulation platform for developing commercial applications, prototyping designs,\nand benchmarking algorithms."
+categories = ["planning", "ik"]
+repository_url = "https://github.com/ros-planning/moveit2"
+homepage_url = "https://moveit.ros.org/"
+video_url = "https://www.youtube.com/watch?v=gC1YcpjTm4c"
+paper_url = "https://arxiv.org/abs/1404.3785"
+logo_url = "https://moveit.ros.org/assets/logo/moveit_logo-black.png"
+tags = []
+
+[[items]]
+name = "OctoMap"
+description = "An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, the viewer octovis, and dynamicEDT3D."
+categories = ["vision"]
+homepage_url = "http://octomap.github.io/"
+repository_url = "https://github.com/OctoMap/octomap"
+video_url = "https://www.youtube.com/watch?v=7ZsxJzR14rc"
+paper_url = "https://courses.cs.washington.edu/courses/cse571/16au/slides/hornung13auro.pdf"
+logo_url = "http://octomap.github.io/octomap_tree.png"
+tags = []
+
+[[items]]
+name = "ORB-SLAM 2"
+description = "Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities."
+categories = ["vision"]
+homepage_url = "https://webdiis.unizar.es/~raulmur/orbslam/"
+repository_url = "https://github.com/raulmur/ORB_SLAM2"
+video_url = "https://www.youtube.com/watch?v=ufvPS5wJAx0"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/7946260/"
+tags = []
+
+[[items]]
+name = "ORB-SLAM 3"
+description = "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM"
+categories = ["vision"]
+repository_url = "https://github.com/UZ-SLAMLab/ORB_SLAM3"
+video_url = "https://www.youtube.com/watch?v=HyLNq-98LRo"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/9440682/"
+tags = []
+
+[[items]]
+name = "Pink"
+description = "Python inverse kinematics for articulated robot models, based on Pinocchio."
+categories = ["ik"]
+repository_url = "https://github.com/tasts-robots/pink"
+video_url = "https://www.youtube.com/watch?v=NO_TkHGS0wQ"
+logo_url = "https://user-images.githubusercontent.com/1189580/172797197-9aa46561-cfaa-4046-bd60-f681d85b055d.png"
+pypi = "pin-pink"
+tags = []
+
+[[items]]
+name = "Point Cloud Library"
+description = "Standalone, large scale, open project for 2D/3D image and point cloud processing."
+categories = ["vision"]
+homepage_url = "https://pointclouds.org/"
+repository_url = "https://github.com/PointCloudLibrary/pcl"
+video_url = "https://www.youtube.com/watch?v=DLvO0b2NBXE"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/5980567/"
+logo_url = "https://github.com/PointCloudLibrary/pcl/raw/master/pcl.png"
+tags = []
+
+[[items]]
+name = "robotoc"
+description = "Efficient optimal control solvers for robotic systems."
+categories = ["control"]
+homepage_url = "https://mayataka.github.io/robotoc/"
+repository_url = "https://github.com/mayataka/robotoc"
+video_url = "https://www.youtube.com/watch?v=SureDVDFbfM"
+paper_url = "https://arxiv.org/abs/2203.00997"
+tags = []
+
+[[items]]
+name = "Ruckig"
+description = "Motion Generation for Robots and Machines. Real-time. Jerk-constrained. Time-optimal. "
+categories = ["planning"]
+homepage_url = "https://ruckig.com/"
+repository_url = "https://github.com/pantor/ruckig"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
+pypi = "ruckig"
+tags = []
+
+[[items]]
+name = "Stable-Baselines3"
+description = "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms."
+categories = ["learning"]
+repository_url = "https://github.com/DLR-RM/stable-baselines3"
+homepage_url = "https://stable-baselines3.readthedocs.io/en/master/"
+video_url = "https://www.youtube.com/watch?v=f_FmDFrYkPM"
+paper_url = "http://jmlr.org/papers/v22/20-1364.html"
+logo_url = "https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png"
+tags = []
+pypi = "stable-baselines3"
+
+[[items]]
+name = "toppra"
+description = "Time-Optimal Path Parameterization, robotic motion planning library."
+categories = ["planning"]
+homepage_url = "https://hungpham2511.github.io/toppra/index.html"
+repository_url = "https://github.com/hungpham2511/toppra"
+video_url = "https://www.youtube.com/watch?v=b9H-zOYWLbY"
+paper_url = "https://ieeexplore.ieee.org/abstract/document/8338417/"
+pypi = "toppra"
+tags = []
+
+[[items]]
+name = "Multi-Robot-GSPNR-toolbox"
+description = "MATLAb package that provides methods to model multi-robot coordination problems as generalized stochastic Petri nets with rewards (GSPNR)"
+categories = ["learning"]
+repository_url = "https://github.com/cazevedo/multi-robot-gspnr-toolbox"
+video_url = "https://www.youtube.com/watch?v=ghdTHn5xiNk"
+paper_url = "https://www.mdpi.com/2076-3417/11/24/12087"
+tags = []
+# More videos:  "https://www.youtube.com/watch?v=CH4iJs0rsIc", "https://www.youtube.com/watch?v=SzpZBFmJZn8"
+
+[[items]]
+name = "POMDP-IR Solver"
+description = "A decision-making framework for active perception with POMDPs."
+categories = ["vision"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/pomdp-ir-solver"
+video_url = "https://www.youtube.com/watch?v=3PCh-G0vCeA"
+paper_url = "https://ieeexplore.ieee.org/document/7759426"
+tags = []
+# More papers: "https://ieeexplore.ieee.org/document/7759426"
+
+[[items]]
+name = "Markov Decision Making (MDM)"
+description = "A library to support the deployment of decision-making methodologies"
+categories = ["planning"]
+homepage_url = "https://www.ai4europe.eu/research/ai-catalog/markov-decision-making"
+paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8002674"
+tags = []
+# video_url = "https://www.youtube.com/watch?v=Ivx908SSzlk"
+# More papers:  "https://www.ai4europe.eu/sites/default/files/2021-05/mdm_report.pdf"
+
+[[items]]
+name = "ICUB-Manual"
+description = "Manual for the iCubNancy01 robot"
+categories = ["misc"]
+homepage_url = "https://github.com/inria-larsen/icub-manual/wiki"
+repository_url = "https://github.com/inria-larsen/icub-manual"
+tags = []
+# From Serena Ivaldi, there are more repositories for this robot: https://github.com/inria-larsen/icub-applications,
+# https://github.com/inria-larsen/icub-scripts, https://github.com/inria-larsen/router-scripts,
+# https://github.com/inria-larsen/icub-plot-data, https://github.com/inria-larsen/icub-assembly-collaborative,
+# https://github.com/inria-larsen/icub-on-a-chair, https://github.com/serena-ivaldi/taskRecorder, https://github.com/serena-ivaldi/taskRecorderGUI,
+# https://github.com/serena-ivaldi/taskPlayer, https://github.com/serena-ivaldi/WoZ
+
+[[items]]
+name = "HEAP: Chist-ERA"
+description = "Human-Guided Learning and Benchmarking of Robotic Heap Sorting project"
+categories = ["learning"]
+homepage_url = "https://github.com/heap-chist-era"
+tags = []
+
+[[items]]
+name = "EMG for HRI"
+description = "EMG processing and using EMG for human-robot interaction (HRI) for the AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/emg-processing"
+paper_url = "https://hal.science/hal-01539731/document"
+tags = []
+# Also this repo: https://github.com/inria-larsen/ergo_prediction
+
+[[items]]
+name = "Activity recognition/prediciton using wearable sensor information"
+description = "Activity recognition/prediciton using wearable sensor information"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/activity-recognition-prediction-wearable"
+video_url = "https://www.youtube.com/watch?v=bPJ5HfE3wAw"
+tags = []
+
+
+[[items]]
+name = "Online activity recognition H2020 AnDy"
+description = "Activity recognition demo for H2020 AnDy project"
+categories = ["learning"]
+homepage_url = "https://members.loria.fr/SIvaldi/projets/andy-2017-2020/"
+repository_url = "https://github.com/inria-larsen/AnDy-demo-activity-recognition"
+tags = []
+
+[[items]]
+name = "Humanoids in Nancy"
+description = "Gitlab with code related to control, learning and teleoperation "
+categories = ["control"]
+repository_url = "https://gitlab.inria.fr/locolearn"
+tags = []
+
+[[items]]
+name = "iCub Learning Trajectories, ProMP"
+description = "Subpart of the project 'icub-learning-trajectories' composed of different programs using ProMP"
+categories = ["misc"]
+repository_url = "https://github.com/inria-larsen/icubLearningTrajectories"
+tags = []
+
+[[items]]
+name = "ProMP C++"
+description = "C++ library of Probabilistic Motion Primitives algorithms."
+categories = ["learning"]
+repository_url = "https://github.com/hucebot/promp"
+paper_url = "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/AlexandrosParaschos/promps_auro.pdf"
+tags = []
+
+[[items]]
+name = "RobotEditor"
+description = "The RobotEditor is a modeling tool that allows to easily create models of scientific robots."
+categories = ["misc"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/748.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/roboteditor"
+tags = []
+
+[[items]]
+name = "Integrated Vision Toolkit (IVT)"
+description = "A open source software library for machine vision."
+categories = ["vision"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/749.php"
+repository_url = "https://ivt.sourceforge.net/"
+tags = []
+
+[[items]]
+name = "Simox"
+description = "A lightweight toolbox for the 3D simulation of robots and sampling based motion and grasp planning."
+categories = ["planning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/750.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/simox/simox"
+paper_url = "https://link.springer.com/chapter/10.1007/978-3-642-33926-4_55"
+tags = []
+#video_url = "https://vahrenka.mp/motion-planning-for-humanoid-robots/"
+
+[[items]]
+name = "ArmarX"
+description = "A modular framework for the creation of modular and distributed robot control architectures."
+categories = ["misc"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/751.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/armarx"
+video_url = "https://www.youtube.com/watch?v=Ew3yuOMeFpU"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Vahrenkamp2015.pdf"
+tags = []
+
+[[items]]
+name = "Master Motor Map (MMM)"
+description = "A reference model of the human body, file formats and accompanying libraries for the generalization of human motions and mapping to robots."
+categories = ["misc"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/752.php"
+repository_url = "https://git.h2t.iar.kit.edu/sw/mmm/core"
+video_url = "https://www.youtube.com/watch?v=7FZd18y2uGo"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/Terlemez2014.pdf"
+tags = []
+# Additional repository: https://git.h2t.iar.kit.edu/sw/mmm/tools
+
+[[items]]
+name = "Deep Episodic Memory"
+description = "A novel deep neural network architecture for representing robot experiences in an episodic-like memory which facilitates encoding, recalling and predicting action experiences."
+categories = ["learning"]
+homepage_url = "https://h2t.anthropomatik.kit.edu/english/1724.php"
+repository_url = "https://github.com/jonasrothfuss/DeepEpisodicMemory"
+paper_url = "https://h2t.anthropomatik.kit.edu/pdf/RothfussFerreira2018.pdf"
+tags = []
+
+[[items]]
+name = "BlenderProc"
+description = "BlenderProc is a software to generate realistic images for the training of neural networks. "
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19074/30527_read-83759/"
+repository_url = "https://github.com/DLR-RM/BlenderProc"
+video_url = "https://www.youtube.com/watch?v=1AvY_iS6xQA"
+paper_url = "https://joss.theoj.org/papers/10.21105/joss.04901"
+pypi = "blenderproc"
+tags = []
+
+[[items]]
+name = "3D Object Tracking"
+description = "In this repository, we share several algorithms and code of our ongoing research on 3D object tracking."
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-19085/30544_read-83761/"
+repository_url = "https://github.com/DLR-RM/3DObjectTracking"
+video_url = "https://www.youtube.com/watch?v=eYd_3TnJIaE"
+paper_url = "https://openaccess.thecvf.com/content/CVPR2022/papers/Stoiber_Iterative_Corresponding_Geometry_Fusing_Region_and_Depth_for_Highly_Efficient_CVPR_2022_paper.pdf"
+tags = []
+
+[[items]]
+name = "Augmented Autoencoders"
+description = "Implicit 3D Orientation Learning for 6D Object Detection from RGB Images"
+categories = ["learning","vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-13864/24048_read-58570/"
+repository_url = "https://github.com/DLR-RM/AugmentedAutoencoder"
+video_url = "https://www.youtube.com/watch?v=jgb2eNNlPq4"
+paper_url = "https://openaccess.thecvf.com/content_ECCV_2018/html/Martin_Sundermeyer_Implicit_3D_Orientation_ECCV_2018_paper.html"
+tags = []
+
+[[items]]
+name = "RAFCON"
+description = "Visual state machine programming"
+categories = ["misc"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-4845/20104_read-47199/"
+repository_url = "https://github.com/DLR-RM/RAFCON"
+video_url = "https://www.youtube.com/watch?v=35dUykJandU"
+paper_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7759506"
+tags = []
+
+[[items]]
+name = "DLR CalDE and CalLab"
+description = "The DLR Camera Calibration Toolbox"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9201"
+repository_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3925/6084_read-9197"
+paper_url = "https://ieeexplore.ieee.org/document/4543398"
+tags = []
+
+[[items]]
+name = "cvkit"
+description = "Computer Vision Toolkit"
+categories = ["vision"]
+homepage_url = "https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-11849/20837_read-48539/"
+repository_url = "https://github.com/roboception/cvkit"
+tags = []
+
+[[items]]
+name = "openEASE"
+description = "openEASE is a web-based knowledge service providing robot and human activity data. It contains semantically annotated data of manipulation actions, including the environment the agent is acting in, the objects it manipulates, the task it performs, and the behavior it generates."
+categories = ["misc"]
+homepage_url = "http://www.open-ease.org/"
+repository_url = "https://github.com/ease-crc/openease"
+video_url = "https://www.youtube.com/watch?v=iu_Y7mxDjgA"
+paper_url = "http://www.open-ease.org/wp-content/uploads/2015/03/knowrob-s.pdf"
+tags = []
+
+[[items]]
+name = "KnowRob"
+description = "KnowRob is a knowledge processing system designed for robots. Its purpose is to equip robots with the capability to organize information in re-usable knowledge chunks, and to perform reasoning in an expressive logic. It further provides a set of tools for visualization and acquisition of knowledge."
+categories = ["misc"]
+homepage_url = "https://knowrob.org/"
+repository_url = "https://github.com/knowrob/knowrob"
+video_url = "https://www.youtube.com/watch?v=IMF7T3YliGs"
+paper_url = "https://ieeexplore.ieee.org/document/8460964"
+tags = []
+
+[[items]]
+name = "Giskard(py)"
+description = "Giskard is an open source motion planning framework for ROS, which uses constraint and optimization based task space control to generate trajectories for the whole body of mobile manipulators."
+categories = ["planning"]
+homepage_url = "https://ai.uni-bremen.de/robocup19"
+repository_url = "https://github.com/SemRoCo/giskardpy"
+tags = []
+
+#[[items]]
+#name = ""
+#description = ""
+#categories = [""]
+#homepage_url = ""
+#repository_url = ""
+#video_url = ""
+#paper_url = ""
+#pypi = ""
+#tags = []
